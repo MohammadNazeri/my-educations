@@ -40,4 +40,10 @@
 * git show v2.1 > shows the encrypted message
 * git tag -v v2.1 > verify the encrypted message
 * git commit -S -m 'message' >  commit and sign
-* 
+## git debug
+* git blame [filename] -L[line number] > shows history of line number > When a bug is found in a line you can track the modification and find out who changed it
+* binary search commit:
+1. git bisect start >  strat binary search commits
+2. git bisect bad >  tells that now the situation is bad and there is bug
+3. git bisect good [commit unique number] > tells that that commit is without bug > git log shows commit unique number
+* After that git switches to a different commit and you should run and check the project > if there is a bug "git bisect bad" else "git bisect good" > finally will tell you where the bug is.
