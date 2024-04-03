@@ -17,4 +17,11 @@
 * gir rm [filename] >  remove file from git and system
 * git branch -d [newbranch] > remove new branch
 ## git remote
+* git clone [gitlink.git] > clone the git > the name will be origin with branches
+* git push origin master > upload
+* git pull origin master > download
+* git remote >  shows remotes
+* git remote add [remotename] [repository link] > add new remote for pull and push with a name like origin
+* git remote -v > shows remote names with their links for pull and push
+* Conflict: changing a file (specially the same line) in the same repository through two people locally and then pushing it to the server > it will be rejected > it suggests what you should do > 1. git pull 2. git tries to automerge otherwise you should do it > push it
 * 
