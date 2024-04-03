@@ -1,2 +1,3 @@
 # git
-Git tutorial
+## git commands:
+* git init > initialization
