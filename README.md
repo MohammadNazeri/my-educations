@@ -47,3 +47,5 @@
 2. git bisect bad >  tells that now the situation is bad and there is bug
 3. git bisect good [commit unique number] > tells that that commit is without bug > git log shows commit unique number
 * After that git switches to a different commit and you should run and check the project > if there is a bug "git bisect bad" else "git bisect good" > finally will tell you where the bug is.
+## git
+* gitlab for using in private server of company
