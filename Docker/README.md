@@ -2,7 +2,7 @@
 # Docker
 * docker images > to list all images in the system
 * docker run [image]
-> image: an executable software package that includes everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and configuration files.
+> image: an executable software package that includes everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and configuration files.   
 > dockerhub: it contains various images
 * docker pull [image] > download image from dockerhub
 * docker ps > shows running docker container
