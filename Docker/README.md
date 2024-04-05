@@ -16,6 +16,6 @@
 > Each image contains some files and takes some requirement files from the upper layer like OS
 * docker exec [container] [command with arguments] > run command inside the existing container
 * docker run -p[image port]:[system port] [image name] > to run image with connecting specific image port to specific system port
-> each time "docker run [image]" run a new copy of image and make a container.   
+> each time "docker run [image]" run a new copy of image and make a new container.   
 > The modification inside container should be saved somewhere
 > 
