@@ -39,4 +39,7 @@ COPY [my app] [image path]  > docker hub shows the path of the image
 > docker build -t [app name]:[version] . : making new image with name and tag
 
 ## Docker Network
-* 
+* docker network ls >  shows the list of existing network
+* docker network create [name] > creates a network with name
+* docker run --network [network name] [image]  > The new container belongs to network name
+> Run all container in the same network to see each other
