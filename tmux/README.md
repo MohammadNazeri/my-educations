@@ -1,5 +1,5 @@
 # Terminal Multiplexer
-> tmux
+> tmux > To run multiple Linux programs over a single connection.
 > Ctrl+B D — Detach from the current session.
 > Ctrl+B % — Split the window into two panes horizontally.
 > Ctrl+B " — Split the window into two panes vertically.
