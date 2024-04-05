@@ -25,4 +25,10 @@
 > Use volume(-v or --mount) to save modification in system. by running image, the modification get from system and affect on container.
 * docker run -v [system path]:[path inside container based on documentation] [image] [requirement command to save modification inside container]
 * docker run --name redis -p 6379:6379 -v /tmp/data/redis:/data redis redis-server --appendonly yes
-## n
+## Dockerfile
+> How to make a new image from an existing image?
+> dockerfile makes a new image from an existing image or a fresh one. To do so, read docker hub of the existing image.
+'''
+> FROM [image] > FROM tiangolo/uwsgi-nginx-flask
+> COPY [my app] [image path]  > docker hub shows the path of the image
+'''
