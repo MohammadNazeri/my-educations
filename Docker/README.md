@@ -30,7 +30,8 @@
 > dockerfile makes a new image from an existing image or a fresh one. To do so, read docker hub of the existing image.
 
 '''
-> FROM [image] > FROM tiangolo/uwsgi-nginx-flask
-> COPY [my app] [image path]  > docker hub shows the path of the image
+FROM [image] > FROM tiangolo/uwsgi-nginx-flask
+COPY [my app] [image path]  > docker hub shows the path of the image
 '''
-> 
+
+
