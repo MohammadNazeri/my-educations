@@ -17,7 +17,7 @@
 * docker run -it [image] > Keep stdin open even if not attached and tty
 > Each image contains some files and takes some requirement files from the upper layer like OS
 * docker exec [container] [command with arguments] > run command inside the existing container
-* docker run -p[image port]:[system port] [image name] > to run image with connecting specific image port to specific system port
+* docker run -p[image port]:[system port] [image name] > to run an image by connecting a specific image port to a specific system port
 ## Volume 
 > each time "docker run [image]" run a new copy of image and make a new container.   
 > How to save modification inside the container? On the docker hub, the author writes how to run docker to save modifications inside the container.
@@ -42,4 +42,11 @@ COPY [my app] [image path]  > docker hub shows the path of the image
 * docker network ls >  shows the list of existing network
 * docker network create [name] > creates a network with name
 * docker run --network [network name] [image]  > The new container belongs to network name
-> Run all container in the same network to see each other
+> Run all containers in the same network to see each other. It works like DNS. It means that all containers can see each other through the name of the containers e.g. redis:8080. Read docker network documentation for various kinds of networks.
+>
+## Build system:
+> By modifying a system, it is needed to modify other parts also.
+
+## Container orchestration platforms
+> Docker Swarm
+> Kubernetes 
