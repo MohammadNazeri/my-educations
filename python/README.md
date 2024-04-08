@@ -32,12 +32,12 @@ for friend in friends:
    print(friend)
 ```
 # Data structure
-* list
+* ### list
    * It is built-in data structure in Python
    * my_list = [1, 2, 3, 'a', 'b', 'c']
    * It is mutable (changable values)
    * It can contain elements of different data types.
-* array
+* ### array
    * It can only contain elements of the same data type.
    *  my_array = array.array('i', [1, 2, 3, 4, 5])
    *  Arrays are using the array function, specifying the type code and the initial values.
