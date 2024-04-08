@@ -27,7 +27,7 @@ def sum(a,b):
 s = sum(1,2)
 ```
 ```
-friends = ['a', 'b', 'c']1
+friends = ['a', 'b', 'c']
 for friend in friends:
    print(friend)
 ```
