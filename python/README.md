@@ -40,6 +40,14 @@ for friend in friends:
    * my_list = [1, 2, 3, 'a', 'b', 'c']
    * It is mutable (changable values)
    * It can contain elements of different data types.
+### Tuple
+   * tuple is a collection data type similar to a list. However, unlike lists, tuples are immutable.
+   * my_tuple = (1, 2, 3, 'a', 'b', 'c')
+   * Packing and Unpacking   
+      ```
+      my_tuple = a, b, c  # Packing
+      x, y, z = my_tuple  # Unpacking
+      ```
 * ### array
    * It can only contain elements of the same data type.
    *  my_array = array.array('i', [1, 2, 3, 4, 5])
@@ -54,7 +62,7 @@ for friend in friends:
    * Strings are immutable.
       *  my_string[0] = 'J' ERROR
       *  new_string = "J" + my_string[1:] created new string.
-      *
+      * string formatting
       ```
       name = 'Alice'
       age = 30
