@@ -49,3 +49,16 @@ for friend in friends:
 *  ### dictionary
    * Dictionaries are mutable, unordered collections of items. Each item in a dictionary consists of a key-value pair, where the key must be unique and immutable, while the value can be of any data type and mutable.
    *  my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+*  ### String
+   * my_string = 'Hello, world!'
+   * Strings are immutable.
+      *  my_string[0] = 'J' ERROR
+      *  new_string = "J" + my_string[1:] created new string.
+      *
+```
+name = 'Alice'
+age = 30
+print("Name: %s, Age: %d" % (name, age))
+print("Name: {}, Age: {}".format(name, age))
+print(f"Name: {name}, Age: {age}")
+```
