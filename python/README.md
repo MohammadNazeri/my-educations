@@ -33,10 +33,13 @@ for friend in friends:
 ```
 # Data structure
 * list
-   * It is built-in 
+   * It is built-in data structure in Python
    * my_list = [1, 2, 3, 'a', 'b', 'c']
    * It is mutable (changable values)
    * It can contain elements of different data types.
 * array
    * It can only contain elements of the same data type.
    *  my_array = array.array('i', [1, 2, 3, 4, 5])
+   *  Arrays are using the array function, specifying the type code and the initial values.
+   *  my_array = array.array('i', [1, 2, 3, 4, 5])
+   *  'i' denotes the type code for signed integers.
