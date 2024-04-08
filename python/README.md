@@ -17,7 +17,12 @@ import math
 math.sin(0.6)
 ```
 ```
-def func():
-   print("funch")
-func()
+def func(str):
+   print(str)
+func("salam")
+```
+```
+def sum(a,b):
+   return a+b
+s = sum(1,2)
 ```
