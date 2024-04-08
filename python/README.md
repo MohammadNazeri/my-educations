@@ -34,7 +34,7 @@ friends = ['a', 'b', 'c']
 for friend in friends:
    print(friend)
 ```
-# Data structure
+## Data structure
 * ### list
    * It is built-in data structure in Python
    * my_list = [1, 2, 3, 'a', 'b', 'c']
@@ -70,3 +70,10 @@ for friend in friends:
       print("Name: {}, Age: {}".format(name, age))
       print(f"Name: {name}, Age: {age}")
       ```
+## Files
+* Using Context Managers (with Statement): It automatically handles opening and closing the file, even if an error occurs within the block.
+  ```
+  with open('example.txt', 'r') as file:
+    content = file.read()
+  // File is automatically closed when exiting the `with` block
+  ```
