@@ -15,6 +15,9 @@ else:
 ```
 import math   
 math.sin(0.6)
+or
+from math import sin
+sin(0.6)
 ```
 ```
 def func(str):
@@ -43,3 +46,6 @@ for friend in friends:
    *  Arrays are using the array function, specifying the type code and the initial values.
    *  my_array = array.array('i', [1, 2, 3, 4, 5])
    *  'i' denotes the type code for signed integers.
+*  ### dictionary
+   * Dictionaries are mutable, unordered collections of items. Each item in a dictionary consists of a key-value pair, where the key must be unique and immutable, while the value can be of any data type and mutable.
+   *  my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
