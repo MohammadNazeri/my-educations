@@ -26,3 +26,8 @@ def sum(a,b):
    return a+b
 s = sum(1,2)
 ```
+```
+friends = ['a', 'b', 'c']1
+for friend in friends:
+   print(friend)
+```
