@@ -1,4 +1,4 @@
-# Python
+   # Python
 ## Elementary
 ```
 age = input("please enter your age")
@@ -31,3 +31,12 @@ friends = ['a', 'b', 'c']
 for friend in friends:
    print(friend)
 ```
+# Data structure
+* list
+   * It is built-in 
+   * my_list = [1, 2, 3, 'a', 'b', 'c']
+   * It is mutable (changable values)
+   * It can contain elements of different data types.
+* array
+   * It can only contain elements of the same data type.
+   *  my_array = array.array('i', [1, 2, 3, 4, 5])
