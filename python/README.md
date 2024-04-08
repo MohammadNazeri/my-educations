@@ -88,5 +88,7 @@ for friend in friends:
      file.close()  # Ensure the file is closed even if an error occurs
 ```
 
+
 ## Context manager
 ##  with statement
+
