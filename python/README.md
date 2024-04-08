@@ -55,10 +55,10 @@ for friend in friends:
       *  my_string[0] = 'J' ERROR
       *  new_string = "J" + my_string[1:] created new string.
       *
-```
-name = 'Alice'
-age = 30
-print("Name: %s, Age: %d" % (name, age))
-print("Name: {}, Age: {}".format(name, age))
-print(f"Name: {name}, Age: {age}")
-```
+      ```
+      name = 'Alice'
+      age = 30
+      print("Name: %s, Age: %d" % (name, age))
+      print("Name: {}, Age: {}".format(name, age))
+      print(f"Name: {name}, Age: {age}")
+      ```
