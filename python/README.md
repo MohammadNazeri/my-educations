@@ -9,5 +9,5 @@
  else:  
 &emsp; print("else")
 
-* `import math   
-* math.sin(0.6)`
+`import math   
+math.sin(0.6)`
