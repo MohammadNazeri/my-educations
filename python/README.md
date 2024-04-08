@@ -77,3 +77,13 @@ for friend in friends:
     content = file.read()
   // File is automatically closed when exiting the `with` block
   ```
+* Error Handling: This is often done using try and except blocks.
+  ```
+  try:
+    file = open('example.txt', 'r')
+    content = file.read()
+except FileNotFoundError:
+    print("File not found")
+finally:
+    file.close()  # Ensure the file is closed even if an error occurs
+```
