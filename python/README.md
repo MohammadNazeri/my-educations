@@ -86,7 +86,7 @@ for friend in friends:
      print("File not found")
   finally:
      file.close()  # Ensure the file is closed even if an error occurs
-```
+   ```
 
 ## Context manager
 ## with statement
