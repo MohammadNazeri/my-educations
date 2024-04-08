@@ -2,12 +2,13 @@
 ## Elementary
 * age = input("please enter your age")
 * age = int(age)
-```if (5>4) and (a==6):  
-&emsp; print("sth")  
- elif (a%2):  
-&emsp; print("sth else")  
- else:  
-&emsp; print("else")
+```
+if (5>4) and (a==6):  
+   print("sth")  
+elif (a%2):
+   print("sth else")  
+else:  
+   print("else")
 ```
 ```
 import math   
