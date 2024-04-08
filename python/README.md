@@ -16,3 +16,8 @@ else:
 import math   
 math.sin(0.6)
 ```
+```
+def func():
+   print("funch")
+func()
+```
