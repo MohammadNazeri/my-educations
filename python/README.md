@@ -121,9 +121,11 @@ def count_up_to(limit):
 * __init__ is a constructor method.
 ```
 class Person:
+    count = 0
     def __init__(self, name, age):
         self.name = name
         self.age = age
+        Person.count = Person.count + 1
     
     def greet(self):
         print(f"Hello, my name is {self.name} and I am {self.age} years old.")
@@ -131,10 +133,23 @@ class Person:
 person1 = Person("Alice", 30)
 person1.greet()
 ```
+* "count" is a class variable. It is used like "Person.count" (not self.count). name and age are object variables. All objects can see class variables but the opposite is not true.
+* overload function in inheritance
+### inheritance
+* Inheritance is a mechanism in which a new class (subclass) can inherit attributes and methods from an existing class (superclass).
+```
+class Student(Person):  # Student class inherits from Person
+    def __init__(self, name, age, grade):
+        super().__init__(name, age)  # Call the superclass constructor
+        self.grade = grade
 
+    def study(self):
+        print(f"{self.name} is studying hard for the exam.")
 
-
-
+# Creating instances of Person and Student classes
+person1 = Person("Alice", 30)
+student1 = Student("Bob", 25, "A")
+```
 
 ## Context manager
 ## with statement
