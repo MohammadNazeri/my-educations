@@ -88,10 +88,9 @@ for friend in friends:
      file.close()  # Ensure the file is closed even if an error occurs
    ```
 ## lambda
-myfunc = lambda x: x*2
-myfunc(2)
-a.sort(lambda x:x[1]) > sort based on second element of each array
-### filter
+* myfunc = lambda x: x*2
+* myfunc(2)
+* a.sort(lambda x:x[1]) > sort based on second element of each array
 
 ### map
 * Applies a specified function to all the items in an iterable (like a list, tuple, etc.)
@@ -115,8 +114,7 @@ def count_up_to(limit):
 ```
 * The yield statement pauses the function's execution and saves its state so that it can resume from that point when called again.
 
-
-
+## OOP
 
 
 
