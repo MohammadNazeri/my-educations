@@ -118,7 +118,7 @@ def count_up_to(limit):
 * A class defines the attributes (data) and methods (functions) that the objects will have.
 * An object is an instance of a class.
 * "self" is a convention used within methods of a class to refer to the instance of the class itself. It is the first parameter of any method in a class, though you don't need to pass it explicitly when calling the method.
-* __init__ is a constructor method.
+* __init__ is a constructor method and __del__ is distructor method.
 ```
 class Person:
     count = 0
@@ -129,12 +129,13 @@ class Person:
     
     def greet(self):
         print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+   def __del__(self):
+         Person.count = Person.count - 1
 
 person1 = Person("Alice", 30)
 person1.greet()
 ```
 * "count" is a class variable. It is used like "Person.count" (not self.count). name and age are object variables. All objects can see class variables but the opposite is not true.
-* overload function in inheritance
 ### inheritance
 * Inheritance is a mechanism in which a new class (subclass) can inherit attributes and methods from an existing class (superclass).
 ```
@@ -150,7 +151,11 @@ class Student(Person):  # Student class inherits from Person
 person1 = Person("Alice", 30)
 student1 = Student("Bob", 25, "A")
 ```
+* Extension: Subclasses can extend the functionality of their superclass(es) by adding new attributes and methods.
+* Overriding: Subclasses can override methods of their superclass(es) to provide their own implementation e.g. __init__ method.
+* super().__init__ calls constructor of superclass.
 
+* 
 ## Context manager
 ## with statement
 
