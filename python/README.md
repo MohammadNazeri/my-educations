@@ -115,7 +115,22 @@ def count_up_to(limit):
 * The yield statement pauses the function's execution and saves its state so that it can resume from that point when called again.
 
 ## OOP
+* A class defines the attributes (data) and methods (functions) that the objects will have.
+* An object is an instance of a class.
+* "self" is a convention used within methods of a class to refer to the instance of the class itself. It is the first parameter of any method in a class, though you don't need to pass it explicitly when calling the method.
+* __init__ is a constructor method.
+```
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
 
+person1 = Person("Alice", 30)
+person1.greet()
+```
 
 
 
