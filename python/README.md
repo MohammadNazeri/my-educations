@@ -156,6 +156,5 @@ student1 = Student("Bob", 25, "A")
 * super().__init__ calls constructor of superclass.
 
 * 
-## Context manager
-## with statement
+## Context manager (with statement)
 
