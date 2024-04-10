@@ -87,6 +87,41 @@ for friend in friends:
   finally:
      file.close()  # Ensure the file is closed even if an error occurs
    ```
+## lambda
+myfunc = lambda x: x*2
+myfunc(2)
+a.sort(lambda x:x[1]) > sort based on second element of each array
+### filter
+
+### map
+* Applies a specified function to all the items in an iterable (like a list, tuple, etc.)
+* map(function, iterable, ...)
+* list(map(lambda x:x*2, iterable))
+* list(map(lambda x:'big if x>10 else 'small', iterable))
+### filter
+* It constructs an iterator from elements of an iterable (like a list, tuple, etc.) for which a specified function returns true.
+* filter(function, iterable)
+* list(filter(lambda x: x%2==0, iterable)
+
+## generator
+* a generator is a special type of iterable, which generates values on the fly instead of storing them in memory all at once.
+* Generators are defined using a function containing one or more yield statements.
+```
+def count_up_to(limit):
+    count = 1
+    while count <= limit:
+        yield count
+        count += 1
+```
+* The yield statement pauses the function's execution and saves its state so that it can resume from that point when called again.
+
+
+
+
+
+
+
+
 
 ## Context manager
 ## with statement
