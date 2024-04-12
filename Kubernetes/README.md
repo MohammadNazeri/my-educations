@@ -10,6 +10,7 @@
   * container runtime
   * kubelet
   * kube proxey
+
  ![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/cf4d2676-544b-4dbb-bc82-dcee70458dde)
 
 * Virtual Network
