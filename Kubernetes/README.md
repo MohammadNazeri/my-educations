@@ -2,9 +2,9 @@
 ## Components
 * Master
   * API server: Clients use UI, API, or CLI to connect to Kubernet through YAML or JSON format. Also, It contains all configurations.
-  * Controller manager
-  * Scheduler
-  * etcd
+  * Controller manager: It Detects dead pods and asks the scheduler to make new ones.
+  * Scheduler: The scheduler is a component responsible for assigning new pods to nodes in the cluster based on resources. 
+  * etcd: It is a key-value store of a cluster state, configuration, and coordination (cluster brain). it keeps all data and every change in a cluster except application data like data base that is in another storage. 
 * Each Worker node contains:
   * pods
   * container runtime
@@ -21,3 +21,5 @@
 * Volume: It is data storage to keep pods' data. Kubernetes cluster does not manage any data persistence.
 * Deployment: Deployment is an API object that provides declarative updates to applications running within a cluster. It manages the deployment and scaling of replica sets, ensuring that a specified number of identical pods are running at any given time.
 * Stateful set:  While Deployments manage stateless applications, a StatefulSet manages stateful applications, such as databases, where each instance requires stable, persistent storage and unique network identifiers.
+
+![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/cf4d2676-544b-4dbb-bc82-dcee70458dde)
