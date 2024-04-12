@@ -10,7 +10,8 @@
   * container runtime
   * kubelet
   * kube proxey
- 
+ ![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/cf4d2676-544b-4dbb-bc82-dcee70458dde)
+
 * Virtual Network
 * Worker node: It consists of multiple pods.
 * Pod: It is a wrapper of a container or containers. The smallest unit that is configured and interacted with. There is one pod per application. Each pod gets one IP address to communicate with other pods.
@@ -22,4 +23,12 @@
 * Deployment: Deployment is an API object that provides declarative updates to applications running within a cluster. It manages the deployment and scaling of replica sets, ensuring that a specified number of identical pods are running at any given time.
 * Stateful set:  While Deployments manage stateless applications, a StatefulSet manages stateful applications, such as databases, where each instance requires stable, persistent storage and unique network identifiers.
 
-![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/cf4d2676-544b-4dbb-bc82-dcee70458dde)
+## Minikube 
+* Minikube sets up a lightweight Kubernetes cluster on your local system, allowing you to experiment with Kubernetes features and deploy applications without needing access to a full-scale production cluster.
+## YAML file
+There are three parts for configuration file of service and deployment:
+1. metadata > Determine the kind of components e.g. service, deployment, etc.
+2. specification > features of component
+3. status > It is related to runtime. Kubernetes always compares the specification part with the current status and if there is a difference (e.g. number of pods) it tries to fit it (self-healing). These data comes from etcd.
+### pod configuration
+It is inside of the specification(spec) part with the title "template". It has its own metadata and spec parts. 
