@@ -5,7 +5,7 @@
   * Controller manager
   * Scheduler
   * etcd
-*Each Worker node contains:
+* Each Worker node contains:
   * pods
   * container runtime
   * kubelet
