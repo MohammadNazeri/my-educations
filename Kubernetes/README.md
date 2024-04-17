@@ -26,7 +26,15 @@
 
 ## Minikube 
 * Minikube sets up a lightweight Kubernetes cluster on your local system, allowing you to experiment with Kubernetes features and deploy applications without needing access to a full-scale production cluster.
-* kubectl:  It is a command-line tool for interacting with Kubernetes clusters. 
+* kubectl:  It is a command-line tool for interacting with Kubernetes clusters.
+### Installation:
+* sudo apt install docker.io
+* sudo systemctl enable docker
+* sudo systemctl start docker
+* install minikube
+* install kubectl
+* sudo minikube start
+
 ## YAML file
 There are three parts for configuration file of service and deployment:
 1. metadata > Determine the kind of components e.g. service, deployment, etc.
