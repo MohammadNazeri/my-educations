@@ -35,9 +35,19 @@
 * install kubectl
 ### Commands
 * minikube start
+* minikube status
 * minikube delete
 * kubectl get nodes > shows all nodes
-* 
+* kubectl get pod
+* kubectl get services
+* kubectl get deployment
+* kubectl create deployment NAME --image=image [--dry-run] [options]
+* kubectl create deployment nginx-depl --image=nginx > get nginx from dockerhub and create deployment
+* kubectl logs [podname] > debug pods
+* kubectl describe pod [podname]
+* kubectl exec -it [podname] --bin/bash > it gives the terminal of application container
+* kubectl delete deployment [deployment name]
+* kubectl apply -f [configuration file].yaml 
 
 ## YAML file
 There are three parts for configuration file of service and deployment:
