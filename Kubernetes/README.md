@@ -33,7 +33,11 @@
 * sudo systemctl start docker
 * install minikube
 * install kubectl
-* sudo minikube start
+### Commands
+* minikube start
+* minikube delete
+* kubectl get nodes > shows all nodes
+* 
 
 ## YAML file
 There are three parts for configuration file of service and deployment:
