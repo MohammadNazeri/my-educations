@@ -37,6 +37,7 @@
 * minikube start
 * minikube status
 * minikube delete
+* minikube service [service name] > Minikube will open a tunnel to the specified service, allowing you to access it via a local URL. This is particularly useful during development and testing phases when you need to interact with services running inside your Kubernetes cluster.
 * kubectl get nodes > shows all nodes
 * kubectl get pod
 * kubectl get services
