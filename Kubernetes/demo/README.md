@@ -6,4 +6,4 @@ The deme creates the configuration as below
 to fill username and password in secret file, it is needed to encrypt them:
 * echo -n '[username]'|base64
 * echo -n '[password]'|base64
-Copy them on secret file. 
+>  Then, Copy them on secret file. 
