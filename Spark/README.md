@@ -1,5 +1,6 @@
 # Apache Spark
 * This is an open-source distributed computing system that is designed for big data processing and analytics.
+* HDFS (Hadoop Distributed File System): It's a distributed file system. HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardware. It provides high throughput access to application data and is suitable for applications that have large data sets.
 * RDD (Resilient Distributed Dataset) is a fundamental data structure in Apache Spark. 
 * Components:
   * Spark Core: It provides distributed task scheduling, memory management, fault recovery, and interaction with storage systems. Spark Core also includes the Resilient Distributed Dataset (RDD) API, which represents a distributed collection of objects that can be operated on in parallel.
