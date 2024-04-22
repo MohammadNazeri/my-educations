@@ -1,7 +1,9 @@
 # Apache Spark
 * This is an open-source distributed computing system that is designed for big data processing and analytics.
-* HDFS (Hadoop Distributed File System): It's a distributed file system. HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardware. It provides high throughput access to application data and is suitable for applications that have large data sets.
-* MapReduce is a programming model and processing framework designed for processing and generating large datasets in a distributed computing environment. 
+* Hadoop is an open-source software framework used for distributed storage and processing of large datasets across clusters of commodity hardware. It has two parts:
+  * HDFS (Hadoop Distributed File System): It is used for storing our data across multiple computers. It's a distributed file system.
+  * MapReduce: It is used to process all data in parallel.
+* Hadoop relies on storing data on disk(slow).
 * RDD (Resilient Distributed Dataset) is a fundamental data structure in Apache Spark. 
 * Components:
   * Spark Core: It provides distributed task scheduling, memory management, fault recovery, and interaction with storage systems. Spark Core also includes the Resilient Distributed Dataset (RDD) API, which represents a distributed collection of objects that can be operated on in parallel.
