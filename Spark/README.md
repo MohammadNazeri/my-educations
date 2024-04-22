@@ -10,5 +10,5 @@
   * MLlib: MLlib is Spark's scalable machine learning library. It provides a wide range of machine learning algorithms and utilities
   * GraphX: It provides a distributed graph processing framework built on top of Spark's RDD abstraction. GraphX enables users to manipulate and analyze graph-structured data, such as social networks or web graphs, using a range of graph algorithms and operators.
  
-  ![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/df91cdd3-9156-4b72-bb7a-a4b7c37e18e2)
+![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/82bd6069-0b7c-409f-9656-0a2f79d2840d)
 
