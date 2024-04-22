@@ -19,3 +19,5 @@
 2. Executor process: It executes the code assigned by the driver process.
 * Cluster manager: is responsible for allocating and managing resources across the nodes in a Spark cluster. It acts as a resource manager and scheduler, coordinating the execution of Spark applications on the cluster nodes.
 
+![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/bb29fb9f-8b43-4036-a345-f0f0e0ca09c6)
+
