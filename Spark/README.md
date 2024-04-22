@@ -3,7 +3,7 @@
 * Hadoop is an open-source software framework used for distributed storage and processing of large datasets across clusters of commodity hardware. It has two parts:
   * HDFS (Hadoop Distributed File System): It is used for storing our data across multiple computers. It's a distributed file system.
   * MapReduce: It is used to process all data in parallel.
-* Hadoop relies on storing data on disk(slow).
+* Hadoop relies on storing data on disk(slow). Solution is RDD which is 100 times faster that Hadoop
 * RDD (Resilient Distributed Dataset) is a fundamental data structure in Apache Spark. 
 * Components:
   * Spark Core: It provides distributed task scheduling, memory management, fault recovery, and interaction with storage systems. Spark Core also includes the Resilient Distributed Dataset (RDD) API, which represents a distributed collection of objects that can be operated on in parallel.
