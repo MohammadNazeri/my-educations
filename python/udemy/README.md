@@ -30,6 +30,31 @@ list comprehensions provide a concise way to create lists. They allow you to gen
 ```new_list = [expression for item in iterable if condition]```
 
 ```new_dic = {key_expression: value_expression for item in iterable if condition}```
+
+
+## Error handling
+
+```
+try:
+  [sth that might cause an exception]
+except:
+  [Do this if there was an exception]
+else:
+  [Do this if there was no exception]
+finally:
+  [always do this]
+```
+There are some kinds of Error type.
+```
+try:
+  [sth that might cause an exception]
+except FileNotFoundError:
+  [Do this if there was an exception]
+except KeyError:
+  [Do this if there was an exception]
+```
+
+
 * until 30
 * 35 key authentication
 * 36 stock trading
