@@ -24,11 +24,12 @@ def increase_enemies():
   enemies = 2
   print(f"enemies inside function: {enemies}")
 ```
-## List comprehension
+## List/Dictionary comprehension
 list comprehensions provide a concise way to create lists. They allow you to generate a new list by applying an expression to each item in an iterable.
 
 ```new_list = [expression for item in iterable if condition]```
 
+```new_dic = {key_expression: value_expression for item in iterable if condition}```
 * until 30
 * 35 key authentication
 * 36 stock trading
