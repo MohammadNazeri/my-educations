@@ -26,3 +26,18 @@ def increase_enemies():
 ```
 
 
+until 30
+35 key authentication
+36 stock trading
+45-53-93 web scraping
+46 spotify
+47 amazon
+49 LinkedIn
+50 Tinder
+63 SQL
+70 git
+71 web application
+72-81
+92-99-100 data science
+98 automation
+
