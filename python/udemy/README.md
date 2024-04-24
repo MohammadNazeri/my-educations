@@ -44,15 +44,30 @@ else:
 finally:
   [always do this]
 ```
-There are some kinds of Error type.
+There are some kinds of Error types. They can be caught separately.
 ```
 try:
   [sth that might cause an exception]
 except FileNotFoundError:
-  [Do this if there was an exception]
-except KeyError:
-  [Do this if there was an exception]
+  print("file not found")
+except KeyError as error_messages:
+  print("Key is not found")
+  print(error_messages)
 ```
+### Raise your own Exception
+There are several different exceptions like SyntaxError, IndentationError, NameError, TypeError, ValueError, KeyError, IndexError, FileNotFoundError, ImportError and AttributeError.
+
+```
+height = float(input("Height: "))
+weight = int(input("Weight: "))
+
+if height > 3:
+    raise ValueError("Human Height should not be over 3 meters.")
+
+bmi = weight / height ** 2
+print(bmi)
+```
+
 
 
 * until 30
