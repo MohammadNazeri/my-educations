@@ -76,6 +76,7 @@ print(bmi)
 * 45-53-93 web scraping
 * 46 spotify
 * 47 amazon
+* 48 selenium 
 * 49 LinkedIn
 * 50 Tinder
 * 63 SQL
