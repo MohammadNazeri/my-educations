@@ -82,7 +82,7 @@ print(bmi)
 * 63 SQL
 * 70 git
 * 71 web application
-* 72-81
+* 72>81 
 * 92-99-100 data science
 * 98 automation
 
