@@ -157,4 +157,6 @@ student1 = Student("Bob", 25, "A")
 
 * 
 ## Context manager (with statement)
+## Virtual Environment
+A Python virtual environment (venv) is simply a directory (project directory) with a particular file structure. It has a bin subdirectory that includes links to a Python interpreter as well as subdirectories that hold packages installed in the specific venv. 
 
