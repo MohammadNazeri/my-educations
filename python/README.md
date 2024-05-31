@@ -158,6 +158,7 @@ student1 = Student("Bob", 25, "A")
 * 
 ## Context manager (with statement)
 ## Virtual Environment
+### venv
 A Python virtual environment (venv) is simply a directory (project directory) with a particular file structure. It has a bin subdirectory that includes links to a Python interpreter as well as subdirectories that hold packages installed in the specific venv. 
 * follow commands should be run on project directory(Linux).
 ```
@@ -171,3 +172,17 @@ pip install -r requirements.txt > install all packages in new env
 deactivate > To deactivate the environment
 ```
 
+### Poetry
+Python Poetry is a tool for dependency management and packaging in Python. Some key features of Python Poetry include:Dependency Management, Virtual Environments, Dependency Resolution, Packaging and Publishing.
+* venv with requirement.txt is prone to misconfig and hard to update
+* pyproject.toml keep some file info together.(requirement.txt+setup.pi+manifest)
+* poetry can handle pyproject.toml file
+```
+poetry add [package] > To add dependency
+poetry show > show all packages status
+peotry remove [package]
+peotry install >  install all dependencies
+poetry shell > to enter to virtual environment
+
+```
+* poetry keeps the track of changes in poetry.lock
