@@ -159,4 +159,15 @@ student1 = Student("Bob", 25, "A")
 ## Context manager (with statement)
 ## Virtual Environment
 A Python virtual environment (venv) is simply a directory (project directory) with a particular file structure. It has a bin subdirectory that includes links to a Python interpreter as well as subdirectories that hold packages installed in the specific venv. 
+* follow commands should be run on project directory(Linux).
+```
+python -m venv [name] > creates directory with [name]
+python -m venv env
+source env/bin/activate > To activate the environment
+pip list
+pip install [package name]
+pip freeze > requirement.txt > To get all packages and versions to give to others
+pip install -r requirements.txt > install all packages in new env
+deactivate > To deactivate the environment
+```
 
