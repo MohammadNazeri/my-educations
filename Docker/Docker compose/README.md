@@ -4,8 +4,8 @@ Docker Compose is a tool that simplifies the management of multi-container Docke
 ```
 version: '3.8'  # Version of Docker Compose file syntax
 
-services:
-  web:          # Defines the containers
+services:    # Defines the containers 
+  web:          # first container
     image: nginx:latest
     ports:
       - "80:80"
@@ -14,7 +14,7 @@ services:
     networks:      
       - webnet
 
-  db:
+  db:      # second container
     image: postgres:13
     environment:
       POSTGRES_PASSWORD: example
