@@ -11,7 +11,7 @@ services:    # Defines the containers
       - "80:80"
     volumes:    
       - ./html:/usr/share/nginx/html
-    networks:      
+    networks:?
       - webnet
 
   db:      # second container
@@ -20,7 +20,7 @@ services:    # Defines the containers
       POSTGRES_PASSWORD: example
     volumes:
       - db-data:/var/lib/postgresql/data
-    networks:
+    networks:?
       - webnet
 
 volumes:      #Defines custom volumes
@@ -29,7 +29,15 @@ volumes:      #Defines custom volumes
 networks:    #Defines custom networks
   webnet:
 
+```
+## Commands
 
-
-
+```
+docker-compose up   #Builds, (re)creates, starts, and attaches to containers for a service.
+docker-compose down   #Stops and removes containers, networks, volumes, and images created by up.
+docker-compose start   #Starts existing containers for a service.
+docker-compose stop   #Stops running containers without removing them.
+docker-compose build   #Builds or rebuilds services.
+docker-compose ps   #Lists containers.
+docker-compose logs   #Displays log output from services.
 ```
