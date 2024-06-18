@@ -4,8 +4,16 @@ Docker Compose is a tool that simplifies the management of multi-container Docke
 ```
 version: '3.8'  # Version of Docker Compose file syntax
 
-services:    # Defines the containers 
-  web:          # first container
+services:    # Defines the containers
+  my-app:    # the first container
+    build: . # when we plan to build an image. The dot shows that the docker file should be in the same path of yaml file.
+    ports:
+      - 3000:3000
+    environment:
+      db_username: ${os_variable} # username and password can be variable in os environment
+      db_password: $(os_variable)
+
+  web:          # second container
     image: nginx:latest
     ports:
       - "80:80"
@@ -13,6 +21,8 @@ services:    # Defines the containers
       - ./html:/usr/share/nginx/html
     networks:?
       - webnet
+    depends_on:    # it starts to run whenever the depends on containers are running
+      - db
 
   db:      # second container
     image: postgres:13
@@ -35,8 +45,10 @@ networks:    #Defines custom networks
 ```
 docker-compose -f filename up   #Builds, (re)creates, starts, and attaches to containers for a service.
 docker-compose -f filename down   #Stops and removes containers, networks, volumes, and images created by up.
-docker-compose start   #Starts existing containers for a service.
-docker-compose stop   #Stops running containers without removing them.
+docker-compose start   #Starts existing (stopped) containers for a service.
+docker-compose stop   #Stops running containers without removing them. The data remain on docker container.
 docker-compose build   #Builds or rebuilds services.
 docker-compose logs   #Displays log output from services.
 ```
+
+## User Secret 
