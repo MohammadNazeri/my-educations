@@ -16,7 +16,7 @@ services:    # Defines the containers
 
   db:      # second container
     image: postgres:13
-    environment:
+    environment:      #environmental variables
       POSTGRES_PASSWORD: example
     volumes:
       - db-data:/var/lib/postgresql/data
