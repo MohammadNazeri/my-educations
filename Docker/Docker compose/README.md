@@ -33,11 +33,10 @@ networks:    #Defines custom networks
 ## Commands
 
 ```
-docker-compose up   #Builds, (re)creates, starts, and attaches to containers for a service.
-docker-compose down   #Stops and removes containers, networks, volumes, and images created by up.
+docker-compose -f filename up   #Builds, (re)creates, starts, and attaches to containers for a service.
+docker-compose -f filename down   #Stops and removes containers, networks, volumes, and images created by up.
 docker-compose start   #Starts existing containers for a service.
 docker-compose stop   #Stops running containers without removing them.
 docker-compose build   #Builds or rebuilds services.
-docker-compose ps   #Lists containers.
 docker-compose logs   #Displays log output from services.
 ```
