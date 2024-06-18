@@ -33,6 +33,7 @@ services:    # Defines the containers
 
 ```
 docker-compose -f filename up   #Builds, (re)creates, starts, and attaches to containers for a service.
+docker-compose -f filename up -d # run docker containers in detach mode (bachground)
 docker-compose -f filename down   #Stops and removes containers, networks, volumes, and images created by up.
 docker-compose start   #Starts existing (stopped) containers for a service.
 docker-compose stop   #Stops running containers without removing them. The data remain on docker container.
