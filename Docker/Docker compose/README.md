@@ -17,10 +17,8 @@ services:    # Defines the containers
     image: nginx:latest
     ports:
       - "80:80"
-    volumes:    
+    volumes:?    
       - ./html:/usr/share/nginx/html
-    networks:?
-      - webnet
     depends_on:    # it starts to run whenever the depends on containers are running
       - db
 
@@ -28,17 +26,8 @@ services:    # Defines the containers
     image: postgres:13
     environment:      #environmental variables
       POSTGRES_PASSWORD: example
-    volumes:
+    volumes:?
       - db-data:/var/lib/postgresql/data
-    networks:?
-      - webnet
-
-volumes:      #Defines custom volumes
-  db-data:
-
-networks:    #Defines custom networks
-  webnet:
-
 ```
 ## Commands
 
