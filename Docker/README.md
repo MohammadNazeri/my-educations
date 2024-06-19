@@ -37,7 +37,11 @@ COPY [my app] [image path]  > docker hub shows the path of the image
 ```
 > docker build . > It makes a new image based on docker file.
 > docker build -t [app name]:[version] . : making new image with name and tag
-
+### Push to Docker Hub
+* docker login --username=mjrod > connect CLI to Docker Hub account
+* docker tag hello-py mjrod/hello-py > tag the image with your Docker Hub username: <username>/<image-name>
+* docker push mjrod/hello-py > to push a new repository to Docker Hub to store the image
+* docker pull mjrod/hello-py:latest to pull the previously uploaded image from Docker Hub
 ## Docker Network
 * docker network ls >  shows the list of existing network
 * docker network create [name] > creates a network with name
