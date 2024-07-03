@@ -11,3 +11,7 @@
 Azure provides four levels of management scope as follows:
 
 ![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/6f43c006-9577-49f3-89b3-3bbef4f214f8)
+
+
+* A storage account is an Azure Resource Manager resource. Resource Manager is the deployment and management service for Azure.
+* Every Resource Manager resource, including an Azure storage account, must belong to an Azure resource group. A resource group is a logical container for grouping your Azure services. 
