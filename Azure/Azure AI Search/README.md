@@ -1,3 +1,4 @@
+# Azure concepts
 * A search index is your searchable content, available to the search engine for indexing, full text search, vector search, hybrid search, and filtered queries.
 * a search index equates to a table, and documents are roughly equivalent to rows in a table. a search index equates to a table, and documents are roughly equivalent to rows in a table.
 * The structure of a document in search index is determined by the index schema
