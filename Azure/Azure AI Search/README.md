@@ -1,6 +1,7 @@
-# Azure concepts
-* ### Azure Cognitive Search vs Azure search:
+# Azure Search Service
+### Azure Cognitive Search vs Azure search:
 * Azure Cognitive Search offers advanced AI capabilities, allowing developers to extract insights from unstructured content using cognitive skills, which includes optical character recognition (OCR), entity recognition, and language detection. This enables better search relevance and more comprehensive search experiences. In contrast, Azure Search does not include these AI capabilities by default, making it more suitable for simpler search requirements without the need for data enrichment.
+### Concepts
 * A search index is your searchable content, available to the search engine for indexing, full text search, vector search, hybrid search, and filtered queries.
 * a search index equates to a table, and documents are roughly equivalent to rows in a table. a search index equates to a table, and documents are roughly equivalent to rows in a table.
 * The structure of a document in search index is determined by the index schema
