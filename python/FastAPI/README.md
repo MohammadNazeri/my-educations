@@ -18,6 +18,7 @@ Uvicorn will run the API on http://localhost:8000.
 ### Features 
 * Path Parameters
   ```
+  @app.get("/greet/{name}") 
   def greet(name: str): 
     return f"Hello {name}"
     ```
