@@ -56,4 +56,19 @@ Uvicorn will run the API on http://localhost:8000.
     items = [Item(name="Foo", description="A new item", price=45.2), 
              Item(name="Bar", description="Another item", price=10.5)]
     return items
-```
+    ```
+* Authentication
+    ```
+    @app.get("/protected")
+    def proteceted(password: str, required_password="secret"):
+    if password == required_password:
+        return "Success!"
+    return "Invalid password"
+    ```
+    ```
+    @app.get("/protected")
+    def protected(authorization: str):
+    if authorization == "token 12345":
+        return "Success!"
+    return "Invalid token"
+    ```
