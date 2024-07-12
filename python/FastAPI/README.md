@@ -23,4 +23,10 @@ Uvicorn will run the API on http://localhost:8000.
     return f"Hello {name}"
     ```
 * Query Parameters
-  
+  ```
+  @app.get("/items/")
+def read_items(category: str, brand: str): 
+    ...
+    ```
+* Request Body
+
