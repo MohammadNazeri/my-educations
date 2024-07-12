@@ -42,3 +42,18 @@ Uvicorn will run the API on http://localhost:8000.
     def create_item(item: Item):
         ...
     ```
+* Response Model
+  ```
+  from pydantic import BaseModel
+
+class Item(BaseModel):
+    name: str
+    description: str 
+    price: float
+
+@app.get("/items/")
+def read_items():
+    items = [Item(name="Foo", description="A new item", price=45.2), 
+             Item(name="Bar", description="Another item", price=10.5)]
+    return items
+```
