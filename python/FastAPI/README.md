@@ -29,4 +29,15 @@ Uvicorn will run the API on http://localhost:8000.
     ...
     ```
 * Request Body
+```
+from pydantic import BaseModel
 
+class Item(BaseModel):
+    name: str
+    description: str
+    price: float
+
+@app.post("/items/")
+def create_item(item: Item):
+    ...
+```
