@@ -29,6 +29,7 @@ Uvicorn will run the API on http://localhost:8000.
     ...
     ```
 * Request Body
+  The request body contains the data in a request, for example, in a POST request.  
 ```
 from pydantic import BaseModel
 
