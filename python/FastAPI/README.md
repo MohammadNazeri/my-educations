@@ -28,7 +28,7 @@ Uvicorn will run the API on http://localhost:8000.
   def read_items(category: str, brand: str): 
     ...
     ```
-* Request Body
+* Request Body  
   The request body contains the data in a request, for example, in a POST request.  
 ```
 from pydantic import BaseModel
