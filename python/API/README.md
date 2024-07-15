@@ -4,9 +4,11 @@
 * The various kinds of data format could be sent e.g. jason.
 * "curl" command could be used for HTTP protocol.
 * "request" library for requesting a http API
-* response = request.get("url") > request API
-* response.json()['data']['amount'] > extract amount pair in data of response.
-* response = request.post('url', payload={'key':'value'})
+```
+ response = request.get("url") > request API
+ response.json()['data']['amount'] > extract amount pair in data of response.
+ response = request.post('url', payload={'key':'value'})
+```
 * There are several types of APIs used in web services:
   * RESTful API (Representational State Transfer)
   * SOAP API (Simple Object Access Protocol)
