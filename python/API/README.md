@@ -15,3 +15,6 @@
   * GraphQL API
   * WebSocket API
   * JSON-RPC and XML-RPC APIs
+* REST API:  is an architectural style for designing networked applications
+* RESTfull API: It adheres to the principles of REST. A RESTful API is an API that uses HTTP requests.
+* while "REST" defines the architectural style, "RESTful" describes applications or services that conform to this style.
