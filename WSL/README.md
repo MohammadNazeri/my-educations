@@ -9,4 +9,5 @@
     * sudo snap install --classic code
     * code .
   * install python3.11 and create venv
+   * pip install -r requirements.txt
 
