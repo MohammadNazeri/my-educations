@@ -77,7 +77,7 @@ class Settings(BaseSettings):
     database_url: str
 
     class Config:
-        env_file = '.env'
+        env_file = '.env' # Load settings from a .env file
         env_file_encoding = 'utf-8'
 
 settings = Settings()
