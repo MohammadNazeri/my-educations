@@ -32,3 +32,21 @@ Core Concepts
   print(user)
   ```
 Pydantic performs automatic data validation. If the data doesn’t match the expected types, it will raise an error.
+
+## Serialization and Deserialization
+You can convert a Pydantic model instance to a dictionary or JSON format and vice versa.
+```
+# Convert to dictionary
+user_dict = user.dict()
+print(user_dict)
+
+# Output:
+# {'id': 1, 'name': 'Alice', 'email': 'alice@example.com', 'is_active': True, 'tags': ['admin', 'user']}
+
+# Convert to JSON
+user_json = user.json()
+print(user_json)
+
+# Output:
+# {"id": 1, "name": "Alice", "email": "alice@example.com", "is_active": true, "tags": ["admin", "user"]}
+```
