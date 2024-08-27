@@ -66,3 +66,21 @@ class User(BaseModel):
             raise ValueError('Invalid email address')
         return v
 ```
+## BaseSettings
+ It is used to handle settings from various sources, such as environment variables or configuration files (.env).
+ ```
+from pydantic_settings import BaseSettings
+
+class Settings(BaseSettings):
+    app_name: str
+    debug: bool = False
+    database_url: str
+
+    class Config:
+        env_file = '.env'
+        env_file_encoding = 'utf-8'
+
+settings = Settings()
+print(settings.app_name)
+
+```
