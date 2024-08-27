@@ -7,7 +7,7 @@ Core Concepts
 
 ## Instruction
 * Defining Pydantic model:
-'''
+```
   from pydantic import BaseModel, Field
   from typing import List, Optional
 
@@ -17,9 +17,9 @@ Core Concepts
     email: str
     is_active: Optional[bool] = True
     tags: List[str] = []
-'''
+```
   * Creating an instance of the User model by passing a dictionary that matches the model’s schema.
-  '''
+  ```
   user_data = {
     "id": 1,
     "name": "Alice",
@@ -30,4 +30,4 @@ Core Concepts
 
   user = User(**user_data)
   print(user)
-  '''
+  ```
