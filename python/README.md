@@ -111,6 +111,13 @@ def count_up_to(limit):
     while count <= limit:
         yield count
         count += 1
+
+for number in count_up_to(5):
+    print(number) # 1 2 3 4 5
+#OR
+
+numbers = list(count_up_to(4))
+print(numbers)
 ```
 * The yield statement pauses the function's execution and saves its state so that it can resume from that point when called again.
 
