@@ -50,3 +50,19 @@ print(user_json)
 # Output:
 # {"id": 1, "name": "Alice", "email": "alice@example.com", "is_active": true, "tags": ["admin", "user"]}
 ```
+## Advanced Features > Custom Validators
+In this example, the validate_email method ensures that the email address contains an @ symbol.
+```
+from pydantic import BaseModel, validator
+
+class User(BaseModel):
+    id: int
+    name: str
+    email: str
+
+    @validator('email')
+    def validate_email(cls, v):
+        if '@' not in v:
+            raise ValueError('Invalid email address')
+        return v
+```
