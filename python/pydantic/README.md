@@ -5,7 +5,7 @@ Core Concepts
 1. Data Validation: Pydantic uses type hints to validate data. When you define a model with Pydantic, it will automatically check that the data you pass in conforms to the types you’ve specified.
 2. Serialization and Deserialization: Pydantic can convert data between different formats. For example, it can serialize Python objects to JSON and deserialize JSON back to Python objects, ensuring the data conforms to the model.
 
-## Instruction
+## Data Validation Instruction 
 * Defining Pydantic model:
 ```
   from pydantic import BaseModel, Field
@@ -31,3 +31,4 @@ Core Concepts
   user = User(**user_data)
   print(user)
   ```
+Pydantic performs automatic data validation. If the data doesn’t match the expected types, it will raise an error.
