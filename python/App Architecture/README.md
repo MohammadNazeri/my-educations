@@ -17,4 +17,10 @@
   * one microservice does one specific job
   * Microservices should be self-contained and independant from each other.
   * Lose coupled: They should be developed, deployed and scaled separately
-* 
+* How do they connect to each other?
+  1. API (Sync): Each service has an endpoint on which it accept Http requests from other services.
+  2. Message Broker (Asynch): Services send their message first into intermediary message service or broker such as rabbitmq then broker forward that message to respctive service.
+  ![image](https://github.com/user-attachments/assets/77e778ed-97f2-4d33-b870-a63dd963bc69)
+  3. Service mesh (Kurbenets): there is helper service which takes over complete communication logic.
+  ![image](https://github.com/user-attachments/assets/f5e2aef6-00dd-4d5c-95eb-3820e00d1e90)
+ 
