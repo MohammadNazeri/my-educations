@@ -13,8 +13,8 @@
 * App is converted into several micro app
 * How to break down applications?
   * Beak down based on the buisiness functionalities not technical functionalities
- * Like products, shopping cart, user, and checkout for online website.
- * one microservice does one specific job
- * Microservices should be self-contained and independant from each other.
- * Lose coupled: They should be developed, deployed and scaled separately
+  * Like products, shopping cart, user, and checkout for online website.
+  * one microservice does one specific job
+  * Microservices should be self-contained and independant from each other.
+  * Lose coupled: They should be developed, deployed and scaled separately
 * 
