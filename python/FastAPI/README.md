@@ -11,6 +11,8 @@ app = FastAPI()
 def read_root():
     return {"Hello": "World"}
 ```
+Uvicorn is an ASGI server implementation commonly used with FastAPI (Asynchronous Server Gateway Interface).
+
 ```uvicorn main:app --reload```
 
 Uvicorn will run the API on http://localhost:8000.
