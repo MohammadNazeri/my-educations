@@ -23,5 +23,16 @@
   ![image](https://github.com/user-attachments/assets/77e778ed-97f2-4d33-b870-a63dd963bc69)
   3. Service mesh (Kurbenets): there is helper service which takes over complete communication logic.
   <img src="https://github.com/user-attachments/assets/f5e2aef6-00dd-4d5c-95eb-3820e00d1e90" alt="image" width="50%">
+* How to mange the code
+  * Monorepo: sinle repo for all project
+    * Folders containe services
+    * easier in management and deployment
+    * Put shared code and libraries in root path to all use them
+  * Polyrepo: separated git repo for each service 
 
- 
+### Kubernetes
+* Chanlleges in microservices
+  * Configuring communication between services > when which service is down
+* Kubernetes is a tool to run microservies application easier
+* It is for automating the deployment, scaling, and management of containerized applications.
+
