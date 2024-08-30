@@ -13,3 +13,6 @@
   * Client ID: public and unique identifier
   * Client Secret: private identifier between app and API
 ![image](https://github.com/user-attachments/assets/7aac2ce2-e867-4302-972b-48dfd24b8bec)
+
+## Microsoft Entra ID
+![image](https://github.com/user-attachments/assets/0a136a78-44ef-4e16-8142-0446198c7bb5)
