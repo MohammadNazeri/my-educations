@@ -16,3 +16,10 @@
 
 ## Microsoft Entra ID
 ![image](https://github.com/user-attachments/assets/0a136a78-44ef-4e16-8142-0446198c7bb5)
+
+## Tokens
+* Access Tokens are used to access resources and have scopes and expiry times.
+* ID Tokens provide user identity information and are used in authentication processes.
+* Refresh Tokens are used to get new access tokens without re-authenticating.
+* Authorization Codes are intermediate tokens used in OAuth 2.0 flows to get access and ID tokens.
+* Bearer Tokens are a general term for tokens used in HTTP authorization headers.
