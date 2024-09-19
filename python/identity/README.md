@@ -17,4 +17,11 @@ Three types of bearer tokens are used by the identity platform as security token
 The Microsoft Authentication Library (MSAL) defines two types of clients
 * Public clients are applications that cannot securely store credentials (like a client secret). This category typically includes applications that run on devices or in environments where users can directly access the application's code
 * Confidential clients are applications that can securely store credentials and can authenticate themselves to the authorization server. These applications usually run on a secure server, where the code is not exposed to users.
-* 
+
+# OAuth2.0 & OpenID Connect
+* OAuth 2.0 is an authorization framework that enables applications to obtain limited access to user resources
+  * OAuth 2.0 defines how a client can request an access token from an authorization server.
+* OpenID Connect extends OAuth 2.0 by adding authentication capabilities and user identity information.
+  * In addition to access tokens, OpenID Connect introduces the ID token, which contains user identity information (e.g., user ID, email) in a standardized format (usually JWT).
+  * Commonly used for logging users into applications,
+* They are often used together in modern applications to provide both secure access and user authentication.
