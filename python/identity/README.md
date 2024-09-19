@@ -13,3 +13,8 @@ Three types of bearer tokens are used by the identity platform as security token
 * Access tokens - Access tokens are issued by the authorization server to the client application. The client passes access tokens to the resource server. Access tokens contain the permissions the client has been granted by the authorization server.
 * ID tokens - ID tokens are issued by the authorization server to the client application. Clients use ID tokens when signing in users and to get basic information about them.
 * Refresh tokens - The client uses a refresh token, or RT, to request new access and ID tokens from the authorization server. 
+# Public and Credential Client
+The Microsoft Authentication Library (MSAL) defines two types of clients
+* Public clients are applications that cannot securely store credentials (like a client secret). This category typically includes applications that run on devices or in environments where users can directly access the application's code
+* Confidential clients are applications that can securely store credentials and can authenticate themselves to the authorization server. These applications usually run on a secure server, where the code is not exposed to users.
+* 
