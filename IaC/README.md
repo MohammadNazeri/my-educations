@@ -12,3 +12,6 @@ Difference of IaC tools:
 * agent vs agentless
 
 ## Terraform
+
+![image](https://github.com/user-attachments/assets/0a4c8839-834a-4519-a289-7dc4e5f8d135)
+
