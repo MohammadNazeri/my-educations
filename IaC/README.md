@@ -30,3 +30,8 @@ It has two main components:
   
 <img src="https://github.com/user-attachments/assets/0a4c8839-834a-4519-a289-7dc4e5f8d135" alt="image" width="50%">
 
+### Terraform command
+1. refresh > query infrustructure provider to get current state
+2. plan > Core creates an execution plan by comparing two files
+3. apply > execute the plan
+4. destroy > destroy the resource/infrastructure
