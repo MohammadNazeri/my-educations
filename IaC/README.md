@@ -22,6 +22,11 @@ It has two main components:
   * It use two input source to do its job:
     * Configuration file: What needs to be created/configured?
     * Terraform State: Current state of setup > It keeps the up-to-date state of how the current set up of the infrustructure looks like.
-
+2. Provider for specific technology
+* It works in different levels:
+  * infrustracture as a Service: AWS, Azure > Cloud provider
+  * Platform as a Service: Kubernetes
+  * Software as a Service: Fastly
+  
 <img src="https://github.com/user-attachments/assets/0a4c8839-834a-4519-a289-7dc4e5f8d135" alt="image" width="50%">
 
