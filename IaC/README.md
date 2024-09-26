@@ -18,12 +18,12 @@ Common example is using
 ### Terraform Architecture
 It has two main components:
 1. Core
-  * It takes two input and figure out a plan of what needs to be done. It compare current state and configuration file(our desire) > make plan
-  * It use two input source to do its job:
+  1.1 It takes two input and figure out a plan of what needs to be done. It compare current state and configuration file(our desire) > make plan
+  1.2 It use two input source to do its job:
     * Configuration file: What needs to be created/configured?
     * Terraform State: Current state of setup > It keeps the up-to-date state of how the current set up of the infrustructure looks like.
 2. Provider for specific technology
-* It works in different levels:
+2.1 It works in different levels:
   * infrustracture as a Service: AWS, Azure > Cloud provider
   * Platform as a Service: Kubernetes
   * Software as a Service: Fastly
