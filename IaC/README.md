@@ -6,7 +6,8 @@ Common example is using
 * Ansible to install and deploy applications
 
 Difference of IaC tools:
-* declarative vs procedural:
+* declarative vs procedural
+  * Declarative = Define WHAT end result you want
 * mutable vs immutable
 * agent vs agentless
 
