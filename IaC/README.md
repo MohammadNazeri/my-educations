@@ -19,7 +19,7 @@ Difference of IaC tools:
 It has two main components:
 1. Core
  * It use two input source to do its job:
-  > Configuration file: What needs to be created/configured?
-  > 
+   * Configuration file: What needs to be created/configured?
+   * 
 ![image](https://github.com/user-attachments/assets/0a4c8839-834a-4519-a289-7dc4e5f8d135)
 
