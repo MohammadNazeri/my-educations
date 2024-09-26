@@ -22,6 +22,6 @@ It has two main components:
  * It use two input source to do its job:
    * Configuration file: What needs to be created/configured?
    * Terraform State: Current state of setup > It keeps the up-to-date state of how the current set up of the infrustructure looks like.
-![image](https://github.com/user-attachments/assets/0a4c8839-834a-4519-a289-7dc4e5f8d135)
+
 <img src="https://github.com/user-attachments/assets/0a4c8839-834a-4519-a289-7dc4e5f8d135" alt="image" width="50%">
 
