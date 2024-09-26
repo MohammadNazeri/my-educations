@@ -12,6 +12,14 @@ Difference of IaC tools:
 * agent vs agentless
 
 ## Terraform
-
+* Automate and manage infrustracture, platform, services thar run on that platform
+* Declarative
+* Open source
+### Terraform Architecture
+It has two main components:
+1. Core
+ * It use two input source to do its job:
+  * Configuration file: What needs to be created/configured?
+  * 
 ![image](https://github.com/user-attachments/assets/0a4c8839-834a-4519-a289-7dc4e5f8d135)
 
