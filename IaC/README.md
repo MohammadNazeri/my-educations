@@ -5,4 +5,8 @@ Common example is using
 * Terraform to provision and configure infrustructure
 * Ansible to install and deploy applications
 
+Difference of IaC tools:
+* declarative vs procedural:
+* mutable vs immutable
+* agent vs agentless
 
