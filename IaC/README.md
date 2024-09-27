@@ -41,7 +41,9 @@ It has two main components:
   
 ```
 [block type] [label (provision)] [lable(instance name]{
- 
+
+[further arguments and blocks may be nested]
+
 }
 ```
 ```
