@@ -35,3 +35,21 @@ It has two main components:
 2. plan > Core creates an execution plan by comparing two files
 3. apply > execute the plan
 4. destroy > destroy the resource/infrastructure
+### Terraform code
+
+* The Terraform language uses a limited number of top-level block types, which are blocks that can appear outside of any other block in a configuration file. Most of Terraform's features (including resources, input variables, output values, data sources, etc.) are implemented as top-level blocks.
+  
+```
+[block type] [label (provision)] [lable(instance name]{
+ 
+}
+```
+```
+resource "aws_instance" "example" {
+  ami = "abc123"
+
+  network_interface {
+    # ...
+  }
+}
+```
