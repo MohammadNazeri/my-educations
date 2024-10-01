@@ -55,3 +55,13 @@ resource "aws_instance" "example" {
   }
 }
 ```
+
+### Terraform file structure
+* main.ft: define the primary resources for your infrastructure.
+* variables.tf: variable definitions
+* outputs.tf: outputs of your Terraform configuration, allowing you to return data after your resources are created.
+* terraform.tfvars: to set the values of the variables defined in variables.tf. It allows you to provide specific configurations without hardcoding them.
+
+provider.tf: This file is used to configure the provider(s) you are using (e.g., AWS, Azure, Google Cloud).
+
+modules/: This directory contains reusable modules. Each module has its own subdirectory with its own main.tf, variables.tf, and outputs.tf files. This keeps your code DRY (Don't Repeat Yourself) and organized.
