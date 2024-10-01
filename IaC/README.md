@@ -63,3 +63,6 @@ resource "aws_instance" "example" {
 * terraform.tfvars: to set the values of the variables defined in variables.tf. It allows you to provide specific configurations without hardcoding them.
 * provider.tf: to configure the provider(s) you are using (e.g., AWS, Azure, Google Cloud).
 * modules/: This directory contains reusable modules. Each module has its own subdirectory with its own main.tf, variables.tf, and outputs.tf files. This keeps your code DRY (Don't Repeat Yourself) and organized.
+
+## Terraformer
+https://github.com/GoogleCloudPlatform/terraformer?tab=readme-ov-file
