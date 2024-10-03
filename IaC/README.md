@@ -64,5 +64,5 @@ resource "aws_instance" "example" {
 * provider.tf: to configure the provider(s) you are using (e.g., AWS, Azure, Google Cloud).
 * modules/: This directory contains reusable modules. Each module has its own subdirectory with its own main.tf, variables.tf, and outputs.tf files. This keeps your code DRY (Don't Repeat Yourself) and organized.
 
-## Terraformer
+## [Terraformer](https://github.com/GoogleCloudPlatform/terraformer?tab=readme-ov-file)
 https://github.com/GoogleCloudPlatform/terraformer?tab=readme-ov-file
