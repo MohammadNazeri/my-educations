@@ -65,4 +65,9 @@ resource "aws_instance" "example" {
 * modules/: This directory contains reusable modules. Each module has its own subdirectory with its own main.tf, variables.tf, and outputs.tf files. This keeps your code DRY (Don't Repeat Yourself) and organized.
 
 ## [Terraformer](https://github.com/GoogleCloudPlatform/terraformer?tab=readme-ov-file)
-https://github.com/GoogleCloudPlatform/terraformer?tab=readme-ov-file
+
+### current state for terraform in azure
+https://www.youtube.com/watch?v=V53AHWun17s
+https://www.youtube.com/watch?v=YcJ9IeukJL8
+https://medium.com/expert-thinking/mastering-azure-search-with-terraform-a-how-to-guide-7edc3a6b1ee3
+https://registry.terraform.io/providers/Mastercard/restapi/latest
