@@ -20,3 +20,6 @@ systemd=true
 [network]
 generateResolvConf = false
 ```
+make the /etc/resolv.conf file immutable. This means that once the below command is executed, the file cannot be modified, deleted, or renamed until the immutable attribute is removed.
+
+```sudo chattr +i /etc/resolv.conf```
