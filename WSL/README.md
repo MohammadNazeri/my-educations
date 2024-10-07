@@ -11,3 +11,12 @@
   * install python3.11 and create venv
    * pip install -r requirements.txt
 
+### WSL network problem
+```sudo nano /etc/wsl.conf```
+```
+[boot]
+systemd=true
+
+[network]
+generateResolvConf = false
+```
