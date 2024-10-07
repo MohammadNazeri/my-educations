@@ -1,12 +1,4 @@
-### WSL network problem
-```sudo nano /etc/wsl.conf```
-```
-[boot]
-systemd=true
 
-[network]
-generateResolvConf = false
-```
 * DNS server  
 nameserver 193.181.14.11  
 nameserver 193.181.14.10  
