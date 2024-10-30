@@ -23,3 +23,11 @@ generateResolvConf = false
 make the /etc/resolv.conf file immutable. This means that once the below command is executed, the file cannot be modified, deleted, or renamed until the immutable attribute is removed.
 
 ```sudo chattr +i /etc/resolv.conf```
+
+## google chrome
+```
+cd /tmp $ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+sudo dpkg -i google-chrome-stable_current_amd64.deb 
+sudo apt install --fix-broken -y
+google-chrome
+```
