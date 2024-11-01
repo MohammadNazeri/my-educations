@@ -1,8 +1,8 @@
 BCSS:
-Hongzheng Pan
-Pierre Marineau
-Joao Frageti A
-Victoria Nguyen
+* Hongzheng Pan
+* Pierre Marineau
+* Joao Frageti A
+* Victoria Nguyen
 
 BNEW
 
