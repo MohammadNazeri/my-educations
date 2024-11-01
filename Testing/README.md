@@ -17,4 +17,6 @@ Non-functional testing:
 * Security Testing
 * Performance Testing: Test Application response time and stability under load
 * Usability Testing: Test user-friendly and easy to use
-* 
+
+Extra Testing:
+* Regression Testing: it is run after modifications to the codebase, such as: Bug fixes, New feature additions, Code refactoring
