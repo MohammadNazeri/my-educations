@@ -9,7 +9,7 @@ BNEW
 Brian Eadie   
   * Attila Czehlár > Budapest
   * Jonathan Hutchinson
-  * Ilona Toth
+  * Ilona Toth   
 Elena Giovannetti   
   * Georges Bourret
 Maribel Jimenez   
