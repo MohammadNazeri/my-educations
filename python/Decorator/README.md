@@ -14,3 +14,17 @@ def smart_div(func):
 div = smart_div(div)
 div(2,4)
 ```
+## The Decoration Process
+When you apply a decorator using the @decorator_name syntax, what Python is really doing is replacing the decorated function with the new callable function returned by the decorator.
+```
+@my_decorator
+def some_function():
+    print("This is the original function.")
+```
+This is equivalent to:
+```
+def some_function():
+    print("This is the original function.")
+
+some_function = my_decorator(some_function)
+```
