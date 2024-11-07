@@ -33,3 +33,21 @@ Inside my_decorator, it returns a new function (the wrapper function), which is 
 
 ## The Role of the wrapper Function
 The wrapper function is the new callable function that is created by the decorator. This function replaces the original some_function. When you call some_function(), you're actually calling the wrapper() function, not the original one. The wrapper() function then calls the original function (func()), often after adding behavior before or after the original function is executed.
+
+## Decorators with Arguments
+If you want to pass arguments to the decorated function, you need to adjust the wrapper to accept any number of arguments (and keyword arguments) using *args and **kwargs:
+```
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        print("Before the function runs")
+        result = func(*args, **kwargs)  # Call the wrapped function with arguments
+        print("After the function runs")
+        return result
+    return wrapper
+
+@my_decorator
+def add(a, b):
+    return a + b
+
+print(add(2, 3))  # Output: 5
+```
