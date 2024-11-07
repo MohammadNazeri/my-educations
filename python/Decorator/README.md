@@ -28,3 +28,7 @@ def some_function():
 
 some_function = my_decorator(some_function)
 ```
+Inside my_decorator, it returns a new function (the wrapper function), which is assigned back to some_function.
+
+## The Role of the wrapper Function
+The wrapper function is the new callable function that is created by the decorator. This function replaces the original some_function. When you call some_function(), you're actually calling the wrapper() function, not the original one. The wrapper() function then calls the original function (func()), often after adding behavior before or after the original function is executed.
