@@ -1,5 +1,6 @@
 # Decorator
-Use to add extra features to exsting function without changing the function.
+* In Python, a decorator is a design pattern that allows you to modify or enhance the behavior of a function or method without changing its actual code. It's a higher-order function, meaning it takes another function as an argument and returns a new function that typically extends or alters the behavior of the original function.
+* Use to add extra features to exsting function without changing the function.
 ```
 def div(a,b):
   print(a/b)
