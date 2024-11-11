@@ -1,4 +1,4 @@
-`# Testing 
+# Testing 
 * Manual testing
   * Flexible but can be time-consuming
 * Automated testing
