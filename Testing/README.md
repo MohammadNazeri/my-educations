@@ -4,7 +4,7 @@
 * Automated testing
   * Efficient and quick once set up
 * Continues Testing
- * part of CI/CD
+  * part of CI/CD
  
 ## Type of Testing 
 Functional testing:
