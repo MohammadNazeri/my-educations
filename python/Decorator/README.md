@@ -51,3 +51,24 @@ def add(a, b):
 
 print(add(2, 3))  # Output: 5
 ```
+## Built-in decorators
+### @property
+* In Python, the @property decorator is used to define methods that act like attributes.
+* It allows you to define getter, setter, and deleter methods for an attribute
+```
+class MyClass:
+    def __init__(self, value):
+        self._value = value
+
+    @property
+    def value(self):
+        return self._value
+
+    @value.setter
+    def value(self, new_value):
+        self._value = new_value
+
+obj = MyClass(10)
+print(obj.value)  # Calls the getter
+obj.value = 20    # Calls the setter
+```
