@@ -53,9 +53,9 @@ build_image:
   variables:
     DOCKER_TLS_CERTDIR: "/certs"
   before_script:
-    - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
+    - docker login -u $REGISTRY_USER -p $REGISTRY_PASS > login to dockerhub(private repository) > define variable in gitlab>settings> CI/CD>variables : these variables are availabe in pipeline code
   script:
-    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG . > build docker image by using DOCKERFILE which exist in root of gitlab > IMAGE_NAME=repository location+image name>e.g. hub.docker.com/nanajanashia/demo-app > dockerhub is default
     - docker push $IMAGE_NAME:$IMAGE_TAG
 
 
