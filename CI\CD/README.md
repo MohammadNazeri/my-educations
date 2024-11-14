@@ -14,3 +14,8 @@
 ## GitLab CI/CD Architecture
 * Gitlab instance or Gitlab server: It host application codes and pipeline
 * Gitlab runners: They are executing the pipelines. They are connected to Gitlab servers.
+
+## Demo Python Application
+1. Test the code in local
+``` make test ```
+2. 
