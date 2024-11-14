@@ -22,7 +22,8 @@
 2. CI/CD pipeline code in YAML format
   * .gitlab-ci.yml file name
 
-![image](https://github.com/user-attachments/assets/4fddb94d-b5a0-4063-acad-cd596143099b)
+<img src="https://github.com/user-attachments/assets/4fddb94d-b5a0-4063-acad-cd596143099b" style="width: 50%;" />
+
 
 
 
