@@ -9,6 +9,8 @@
 ## Other CI/CD Tools
 
 ![image](https://github.com/user-attachments/assets/65696fbc-e63a-4b94-8c38-3a043c6acc69)
+<img src="https://github.com/user-attachments/assets/65696fbc-e63a-4b94-8c38-3a043c6acc69" style="width: 50%;" />
+
 
 ## GitLab CI/CD Architecture
 * Gitlab instance or Gitlab server: It host application codes and pipeline
