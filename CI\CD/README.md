@@ -14,6 +14,7 @@
 ## GitLab CI/CD Architecture
 * Gitlab instance or Gitlab server: It host application codes and pipeline
 * Gitlab runners: They are executing the pipelines. They are connected to Gitlab servers.
+ * It could run pipeline on OS or docker 
 
 ## Demo Python Application
 1. Test the code in local
@@ -21,25 +22,26 @@
 
 2. Create CI/CD pipeline code in YAML format
   * .gitlab-ci.yml file name
+  * By creating the file and commit the code, gitlab start to run it
 
 <img src="https://github.com/user-attachments/assets/4fddb94d-b5a0-4063-acad-cd596143099b" style="width: 50%;" />
 
 ```
-variables: # variables in code
+variables: 
   IMAGE_NAME: nanajanashia/demo-app
   IMAGE_TAG: python-app-1.0
 
-stages:
+stages: > sequence of running jobs
   - test
   - build
   - deploy
 
-run_tests:
+run_tests: > name of job
   stage: test
-  image: python:3.9-slim-buster
-  before_script:
-    - apt-get update && apt-get install make
-  script:
+  image: python:3.9-slim-buster > gitlab runner
+  before_script: > run the command before running scripts
+    - apt-get update && apt-get install make > The python code needs python, pip (to install libraries) and make (to run). The python image misses make. Hence we should install it.
+  script: > list of commands should be run 
     - make test
 
 
@@ -69,6 +71,7 @@ deploy:
 
 ```
 
+* In gitlab>Ci/CD>Jobs, the logs can be checked.
 
 
 
