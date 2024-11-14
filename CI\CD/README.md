@@ -18,4 +18,4 @@
 ## Demo Python Application
 1. Test the code in local
 ``` make test ```
-2. 
+2. In pipeline three command have to be available: make 
