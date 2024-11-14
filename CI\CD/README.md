@@ -18,4 +18,15 @@
 ## Demo Python Application
 1. Test the code in local
 ``` make test ```
-2. In pipeline three command have to be available: make 
+
+2. CI/CD pipeline code in YAML format
+  * .gitlab-ci.yml file name
+
+![image](https://github.com/user-attachments/assets/4fddb94d-b5a0-4063-acad-cd596143099b)
+
+
+
+
+
+
+4. In pipeline three command have to be available: make 
