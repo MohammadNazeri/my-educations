@@ -53,10 +53,10 @@ build_image:
   variables:
     DOCKER_TLS_CERTDIR: "/certs"
   before_script:
-    - docker login -u $REGISTRY_USER -p $REGISTRY_PASS > login to dockerhub(private repository) > define variable in gitlab>settings> CI/CD>variables : these variables are availabe in pipeline code
+    - docker login -u $REGISTRY_USER -p $REGISTRY_PASS > login to dockerhub(private repository) > define variable in gitlab>settings> CI/CD>variables : these variables are availabe in pipeline code > Also the dockerhub is default. If another docker registery exist we can specify it by its address at the end of command: [register_url]
   script:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG . > build docker image by using DOCKERFILE which exist in root of gitlab > IMAGE_NAME=repository location+image name>e.g. hub.docker.com/nanajanashia/demo-app > dockerhub is default
-    - docker push $IMAGE_NAME:$IMAGE_TAG
+    - docker push $IMAGE_NAME:$IMAGE_TAG > the default repository is dockerhub
 
 
 deploy:
