@@ -31,7 +31,7 @@ variables:
   IMAGE_NAME: nanajanashia/demo-app
   IMAGE_TAG: python-app-1.0
 
-stages: > sequence of running jobs
+stages: > running jobs in order
   - test
   - build
   - deploy
@@ -48,10 +48,10 @@ run_tests: > name of job
 build_image:
   stage: build
   image: docker:20.10.16
-  services:
+  services: > It is a container which start at the same time as job container. Job container uses the container in build time like mysql, daemon, etc.
     - docker:20.10.16-dind
   variables:
-    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_CERTDIR: "/certs" > docker creates certificate in this location. The certificate will share between service and job container
   before_script:
     - docker login -u $REGISTRY_USER -p $REGISTRY_PASS > login to dockerhub(private repository) > define variable in gitlab>settings> CI/CD>variables : these variables are availabe in pipeline code > Also the dockerhub is default. If another docker registery exist we can specify it by its address at the end of command: [register_url]
   script:
@@ -59,15 +59,15 @@ build_image:
     - docker push $IMAGE_NAME:$IMAGE_TAG > the default repository is dockerhub
 
 
-deploy:
+deploy: > Deployment server: To connect to server, here uses ssh command. It needs ssh key. It needs to set ssh private and public key. Assume the server is pure OS, it needs docker to be installed. 
   stage: deploy
   before_script:
-    - chmod 400 $SSH_KEY
+    - chmod 400 $SSH_KEY > Because the ssh_key stored in file type, it needs to set permission for the file.
   script:
-    - ssh -o StrictHostKeyChecking=no -i $SSH_KEY root@161.35.223.117 "
-        docker login -u $REGISTRY_USER -p $REGISTRY_PASS &&
-        docker ps -aq | xargs docker stop | xargs docker rm &&
-        docker run -d -p 5000:5000 $IMAGE_NAME:$IMAGE_TAG"
+    - ssh -o StrictHostKeyChecking=no -i $SSH_KEY root@161.35.223.117 " > define ssh_key in gitlab>setting>CI/CD>variable > we should disable interactive step by stictho... option > by connecting to server run commands:
+        docker login -u $REGISTRY_USER -p $REGISTRY_PASS && > login to pull the image
+        docker ps -aq | xargs docker stop | xargs docker rm && > by running each time, it needs to remove previous version and run new one
+        docker run -d -p 5000:5000 $IMAGE_NAME:$IMAGE_TAG" >  pull and run the app in specific port
 
 ```
 
