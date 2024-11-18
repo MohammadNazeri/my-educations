@@ -43,3 +43,27 @@ jobs:
 ```
 
 ## Azure Artifacts
+* Traditionaly, depending on application programming language, artifact produced will be different such as JAR file, etc
+* The produced artifact in the built pipeline, can be stored in azure atrifact(as a repository).
+* In modern, we donot use artifact anymore. Instead docker images are created as artifact.
+
+## Azure Pipelines Stages
+* stage is logical boundary in the pipeline. Each stage contains one or more jobs. They run one after another.
+
+```
+stages:
+- stage: Build
+  jobs:
+  -  job: Test and Build
+    steps:
+    - task:
+    ...
+    - task:
+    ...
+- stage: Deploy
+  jobs:
+  - job: Deploy to development
+    steps:
+    - task:
+    ...
+```
