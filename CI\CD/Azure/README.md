@@ -8,6 +8,7 @@ planning is the first step.
 Source control management
 ## Azure pipeline build
 Releasing new feature/bug
+
 <img src="https://github.com/user-attachments/assets/cc1a41da-8187-4241-8b5b-58b06e4a0ae3" style="width: 50%;" />
 
 ### Syntax Pipeline
