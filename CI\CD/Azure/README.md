@@ -71,3 +71,7 @@ stages:
 * A deployment job is a special type of job in Azure Pipelines that is specifically designed for deployment purposes.
 * A deployment job ensures that resources like Azure Web Apps, Kubernetes, virtual machines, or other cloud resources are updated with the new version of your application.
 * What differentiates a deployment job from a regular job is that it can track deployment history and provide features like approvals, gates, and rollbacks.
+
+
+<img src="https://github.com/user-attachments/assets/531ae9c9-e828-4510-9d7e-7f5463ad41f8" style="width: 50%;" />
+
