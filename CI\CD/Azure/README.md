@@ -19,7 +19,7 @@ Releasing new feature/bug
 * Each job runs on an agent
 * All the steps in a job run on the same agent
 * With jobs we can run series of steps in different environment.
-* 
+* Jobs can run in parallel, sequentially, or across different agents.
 ```
 trigger:
 - main
@@ -49,6 +49,7 @@ jobs:
 
 ## Azure Pipelines Stages
 * stage is logical boundary in the pipeline. Each stage contains one or more jobs. They run one after another.
+* Two stages are defined here.
 
 ```
 stages:
@@ -62,8 +63,11 @@ stages:
     ...
 - stage: Deploy
   jobs:
-  - job: Deploy to development
+  - deployment: Deploy to development
     steps:
     - task:
     ...
 ```
+*A deployment job is a special type of job in Azure Pipelines that is specifically designed for deployment purposes.
+* A deployment job ensures that resources like Azure Web Apps, Kubernetes, virtual machines, or other cloud resources are updated with the new version of your application.
+* What differentiates a deployment job from a regular job is that it can track deployment history and provide features like approvals, gates, and rollbacks.
