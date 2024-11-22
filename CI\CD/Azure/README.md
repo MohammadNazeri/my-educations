@@ -48,6 +48,7 @@ jobs:
 * In modern, we donot use artifact anymore. Instead docker images are created as artifact.
 
 ## Azure Pipelines Stages
+* The file name is ```azure-pipelines.yml```
 * stage is logical boundary in the pipeline. Each stage contains one or more jobs. They run one after another.
 * Two stages are defined here.
 
