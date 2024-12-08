@@ -4,7 +4,8 @@
 * docker images > to list all images in the system
 * docker run [image]
 * docker run --name [container name] [image] > use the image to make a container with a specific name
-> image: an executable software package that includes everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and configuration files.   
+> image: an executable software package that includes everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and configuration files.
+> container is a running instance of a Docker image.
 > dockerhub: it contains various images
 * docker pull [image] > download image from dockerhub
 * docker ps > shows running docker container
