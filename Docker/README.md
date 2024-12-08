@@ -50,8 +50,9 @@ RUN [linux command] > RUN pip install -r /tmp/requirements.txt
 COPY [my app] [image path]  > docker hub shows the path of the image
 CMD ["command to run", "argument of command"] > The instruction that is to be executed when a docker container starts. There can only be one CMD instruction in dockerfile.
 ```
-> docker build . > It makes a new image based on docker file.
-> docker build -t [app name]:[version] . : making new image with name and tag
+* docker build . > It makes a new image based on docker file.
+* docker build -t [app name]:[version] . : making new image with name and tag
+* docker images > to see built image
 ### Push to Docker Hub
 * docker login --username=mjrod > connect CLI to Docker Hub account
 * docker tag hello-py mjrod/hello-py > tag the image with your Docker Hub username: <username>/<image-name>
