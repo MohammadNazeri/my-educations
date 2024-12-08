@@ -48,7 +48,7 @@ FROM [image] > FROM tiangolo/uwsgi-nginx-flask
 COPY [system file] [image path] > COPY ./reqirements.txt /tmp/requirements.txt
 RUN [linux command] > RUN pip install -r /tmp/requirements.txt
 COPY [my app] [image path]  > docker hub shows the path of the image
-CMD ["command to run"] > The instruction that is to be executed when a docker container starts. There can only be one CMD instruction in dockerfile.
+CMD ["command to run", "argument of command"] > The instruction that is to be executed when a docker container starts. There can only be one CMD instruction in dockerfile.
 ```
 > docker build . > It makes a new image based on docker file.
 > docker build -t [app name]:[version] . : making new image with name and tag
