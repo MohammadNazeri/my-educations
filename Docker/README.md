@@ -4,8 +4,8 @@
 * docker images > to list all images in the system
 * docker run [image]
 * docker run --name [container name] [image] > use the image to make a container with a specific name
-> image: an executable software package that includes everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and configuration files.
-  > It is based on a base-layer and also multi-layers on top of that
+> * image: an executable software package that includes everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and configuration files.
+  > * It is based on a base-layer and also multi-layers on top of that
   > Images are stored in a Docker registry, such as Docker Hub or a private registry.
   > It is built thorugh Docker file.
 > container is a running instance of a Docker image.
