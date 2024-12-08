@@ -1,5 +1,10 @@
 
 # Docker
+* dockerhub: public and private docker registry
+* private docker registry: AWS(ECR: Elastic Container Registery, google, Azure, etc)
+
+![image](https://github.com/user-attachments/assets/1f019647-3b1c-4b1e-ba6e-53c79ca3b7ef)
+
 ## Commands
 * docker images > to list all images in the system
 * docker run [image]
