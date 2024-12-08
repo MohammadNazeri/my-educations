@@ -7,10 +7,10 @@
 > * Image: an executable software package that includes everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and configuration files.
   >   * It is based on a base-layer and also multi-layers on top of that
   >   * Images are stored in a Docker registry, such as Docker Hub or a private registry.
-  > It is built thorugh Docker file.
-> container is a running instance of a Docker image.
-  > It is built and run through a commmand.
-> dockerhub: it contains various images
+  >   * It is built thorugh Docker file.
+> * container is a running instance of a Docker image.
+  >   * It is built and run through a commmand.
+> * dockerhub: it contains various images
 * docker pull [image] > download image from dockerhub
 * docker ps > shows running docker container
 * docker run [image] [command with arguments] > run the command inside the image. First, it creates a new container from the image and then starts it.
