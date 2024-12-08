@@ -2,6 +2,9 @@
 # Docker
 * dockerhub: public and private docker registry
 * private docker registry: AWS(ECR: Elastic Container Registery, google, Azure, etc)
+* Registry: It is provide storage for images like dockerhub, AWS ECR
+* Repository: It is inside of Registry. Each application images has its own repository.
+* Image: Repository contains different version and tags of an image
 
 ![image](https://github.com/user-attachments/assets/1f019647-3b1c-4b1e-ba6e-53c79ca3b7ef)
 
