@@ -19,7 +19,8 @@
 * Service: Two functionalities: keep permanent IP address  and load balancer. When a pod crashes and dies its service remains unchanged until a new pod restart.
 * Ingress: It manages external access to services within a cluster. It acts as a gateway, allowing external traffic to reach the appropriate services within the Kubernetes cluster.
 
-![image](https://github.com/user-attachments/assets/221b81c7-f05e-465d-b5e2-6ef32a1c58cd)
+<img src="https://github.com/user-attachments/assets/221b81c7-f05e-465d-b5e2-6ef32a1c58cd" style="width: 50%;" />
+
 
 
 * Configmap: ConfigMap is an API object used to store non-sensitive configuration data that can be consumed by pods or other resources in the cluster.
