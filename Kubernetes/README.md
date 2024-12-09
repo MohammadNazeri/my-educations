@@ -26,6 +26,10 @@
 * Configmap: ConfigMap is an API object used to store non-sensitive configuration data that can be consumed by pods or other resources in the cluster.
 * Secret: It is kind of ConfigMap that is used to store sensitive configuration data e.g. username and password
 * Volume: It is data storage to keep pods' data. Kubernetes cluster does not manage any data persistence.
+
+![image](https://github.com/user-attachments/assets/fc344f6a-1b2a-491a-93ac-4ed2cf8ea14b)
+
+
 * Deployment: Deployment is an API object that provides declarative updates to applications running within a cluster. It manages the deployment and scaling of replica sets, ensuring that a specified number of identical pods are running at any given time.
 * Stateful set:  While Deployments manage stateless applications, a StatefulSet manages stateful applications, such as databases, where each instance requires stable, persistent storage and unique network identifiers.
 
