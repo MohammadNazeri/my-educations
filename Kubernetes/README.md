@@ -18,6 +18,10 @@
 * Pod: It is a wrapper of a container or containers. The smallest unit that is configured and interacted with. There is one pod per application. Each pod gets one IP address to communicate with other pods.
 * Service: Two functionalities: keep permanent IP address  and load balancer. When a pod crashes and dies its service remains unchanged until a new pod restart.
 * Ingress: It manages external access to services within a cluster. It acts as a gateway, allowing external traffic to reach the appropriate services within the Kubernetes cluster.
+
+![image](https://github.com/user-attachments/assets/221b81c7-f05e-465d-b5e2-6ef32a1c58cd)
+
+
 * Configmap: ConfigMap is an API object used to store non-sensitive configuration data that can be consumed by pods or other resources in the cluster.
 * Secret: It is kind of ConfigMap that is used to store sensitive configuration data e.g. username and password
 * Volume: It is data storage to keep pods' data. Kubernetes cluster does not manage any data persistence.
