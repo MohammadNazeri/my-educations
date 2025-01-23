@@ -5,7 +5,7 @@
   * Controller manager: It Detects dead pods and asks the scheduler to make new ones.
   * Scheduler: The scheduler is a component responsible for assigning new pods to nodes in the cluster based on resources. 
   * etcd: It is a key-value store of a cluster state, configuration, and coordination (cluster brain). it keeps all data and every change in a cluster except application data like data base that is in another storage. 
-* Each Worker node (virtual or physical machine) contains:
+* Node (Worker node can be virtual or physical machine) contains:
   * pods
   * container runtime
   * kubelet
