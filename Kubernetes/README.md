@@ -14,7 +14,7 @@
  ![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/cf4d2676-544b-4dbb-bc82-dcee70458dde)
 
 * Virtual Network
-* Service: Two functionalities: keep permanent IP address  and load balancer. When a pod crashes and dies its service remains unchanged until a new pod restart.
+* Service: When a pod crashes and dies its service remains unchanged until a new pod restart. Two functionalities: 1. keep permanent IP address  2. load balancer. 
 ![image](https://github.com/user-attachments/assets/b8f2abbb-9fad-4a6a-8730-938afccde77a)
 
 * Ingress: It manages external access to services within a cluster. It acts as a gateway, allowing external traffic to reach the appropriate services within the Kubernetes cluster.
