@@ -21,11 +21,11 @@
 
 <img src="https://github.com/user-attachments/assets/221b81c7-f05e-465d-b5e2-6ef32a1c58cd" style="width: 50%;" />
 
-
-
 * Configmap: ConfigMap is an API object used to store non-sensitive configuration data that can be consumed by pods or other resources in the cluster like address of DB
 * Secret: It is kind of ConfigMap that is used to store sensitive configuration data e.g. username and password
+
 <img src="https://github.com/user-attachments/assets/5bcfc627-1840-4dfe-b6b3-ff88bdf989b0" style="width: 50%;" />
+
 * Volume: It is data storage to keep pods' data. Kubernetes cluster does not manage any data persistence.
 
 ![image](https://github.com/user-attachments/assets/fc344f6a-1b2a-491a-93ac-4ed2cf8ea14b)
