@@ -31,8 +31,12 @@
 ![image](https://github.com/user-attachments/assets/fc344f6a-1b2a-491a-93ac-4ed2cf8ea14b)
 
 
-* Deployment: Deployment is an API object that provides declarative updates to applications running within a cluster. It manages the deployment and scaling of replica sets, ensuring that a specified number of identical pods are running at any given time.
-* Stateful set:  While Deployments manage stateless applications, a StatefulSet manages stateful applications, such as databases, where each instance requires stable, persistent storage and unique network identifiers.
+* Deployment: Deployment is an API object that provides declarative updates to applications running within a cluster. It manages the deployment and scaling of replica sets, ensuring that a specified number of identical pods are running at any given time. Pod is on top of containers and deployment is on top of pod. In practice, we should work with deployment not with pods. 
+* Stateful set:  While Deployments manage stateless applications, a Stateful Set manages stateful applications, such as databases, where each instance requires stable, persistent storage and unique network identifiers. In addition, Stateful set ensures that datebase reads and writes are synchronized. 
+
+<img src="https://github.com/user-attachments/assets/03166db3-b98f-4421-9f57-cb2ec0e85ab1" style="width: 50%;" />
+
+
 
 ## Minikube 
 * Minikube sets up a lightweight Kubernetes cluster on your local system, allowing you to experiment with Kubernetes features and deploy applications without needing access to a full-scale production cluster.
