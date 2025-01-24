@@ -69,7 +69,7 @@ It just uses for starting and deleting a cluster.
 * kubectl create deployment NAME --image=image [--dry-run] [options] > kubctl donot create pod directly. Instead, we should create deployment.
 * kubectl create deployment nginx-depl --image=nginx > get nginx from dockerhub and create deployment
 * kubectl get replicaset > show all replicasets which maintains a specified number of replicas of a Pod
-* kubectl edit pod [name] > it opens an editor to edict configuration of pod. Then it terminates earlier pod and creates new one.
+* kubectl edit deployment [name] > it opens an editor to edict configuration of pod. Then it terminates earlier pod and creates new one.
 * kubectl logs [podname] > debug pods
 * kubectl describe pod [podname]
 * kubectl exec -it [podname] --bin/bash > it gives the terminal of application container
