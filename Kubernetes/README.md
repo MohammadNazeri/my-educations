@@ -4,8 +4,9 @@
   a. API server: Clients use UI, API, or CLI to connect to Kubernet through YAML or JSON format. Also, It contains all configurations. It serves the Kubernetes API, Handle Requests and Authorization and Authentication.  
   b. Controller manager: It Detects dead pods and asks the scheduler to make new ones.  
   c. Scheduler: The scheduler is a component responsible for assigning new pods to nodes in the cluster based on resources.   
-  d. etcd: It is a key-value store of a cluster state, configuration, and coordination (cluster brain). it keeps all data and every change in a cluster except application data like data base that is in another storage.   
-2. Node (Worker node can be virtual or physical machine) contains:  
+  d. etcd: It is a key-value store of a cluster state, configuration, and coordination (cluster brain). it keeps all data and every change in a cluster except application data like data base that is in another storage.
+scheduler/controller manager uses etcd data to select node to create pod/to check status of cluster to detect dead pods.  
+3. Node (Worker node can be virtual or physical machine) contains:  
   a. pods:  It is a wrapper of a container or containers. The smallest unit that is configured and interacted with. There is one pod per application. Each pod gets one IP address to communicate with other pods.  
   b. container runtime: like docker negine  
   c. kubelet: responsiblities: Manages Pods on Nodes+Communicates with the API Server+Runs Containers through container runtime  
