@@ -41,6 +41,7 @@ Nodes consist of:
 
 <img src="https://github.com/user-attachments/assets/03166db3-b98f-4421-9f57-cb2ec0e85ab1" style="width: 50%;" />
 
+## Master
 
 
 ## Minikube 
