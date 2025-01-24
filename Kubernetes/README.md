@@ -9,7 +9,7 @@
   a. pods:  It is a wrapper of a container or containers. The smallest unit that is configured and interacted with. There is one pod per application. Each pod gets one IP address to communicate with other pods.  
   b. container runtime: like docker negine  
   c. kubelet: responsiblities: Manages Pods on Nodes+Communicates with the API Server+Runs Containers through container runtime  
-  d. kube proxey  
+  d. kube proxey: responsibilies: routing and load balancing of network traffic to Pods+ensures that Kubernetes Services are reachable from within and outside the cluster
 
 ![image](https://github.com/user-attachments/assets/89c799b7-fbbc-4526-8d80-65771a48ecbc)
 
