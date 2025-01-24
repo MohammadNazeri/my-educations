@@ -76,7 +76,7 @@ It just uses for starting and deleting a cluster.
 * kubectl apply -f [configuration file].yaml 
 ```
 
-![image](https://github.com/user-attachments/assets/f09a0958-b849-447a-9496-238751fa3e3b)
+<img src="https://github.com/user-attachments/assets/f09a0958-b849-447a-9496-238751fa3e3b" style="width: 50%;" />
 
 
 ## YAML file
