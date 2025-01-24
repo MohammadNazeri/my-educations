@@ -1,11 +1,11 @@
 # Kubernetes
 ## Components
-* Master
+1. Master
   * API server: Clients use UI, API, or CLI to connect to Kubernet through YAML or JSON format. Also, It contains all configurations.
   * Controller manager: It Detects dead pods and asks the scheduler to make new ones.
   * Scheduler: The scheduler is a component responsible for assigning new pods to nodes in the cluster based on resources. 
   * etcd: It is a key-value store of a cluster state, configuration, and coordination (cluster brain). it keeps all data and every change in a cluster except application data like data base that is in another storage. 
-* Node (Worker node can be virtual or physical machine) contains:
+2. Node (Worker node can be virtual or physical machine) contains:
   * pods:  It is a wrapper of a container or containers. The smallest unit that is configured and interacted with. There is one pod per application. Each pod gets one IP address to communicate with other pods.
   * container runtime: like docker negine
   * kubelet: responsiblities: Manages Pods on Nodes+Communicates with the API Server+Runs Containers through container runtime
