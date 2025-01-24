@@ -63,7 +63,7 @@ It just uses for starting and deleting a cluster.
 * kubectl get pod
 * kubectl get services
 * kubectl get deployment
-* kubectl create deployment NAME --image=image [--dry-run] [options]
+* kubectl create deployment NAME --image=image [--dry-run] [options] > kubctl donot create pod directly. Instead, we should create deployment.
 * kubectl create deployment nginx-depl --image=nginx > get nginx from dockerhub and create deployment
 * kubectl logs [podname] > debug pods
 * kubectl describe pod [podname]
