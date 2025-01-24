@@ -89,19 +89,19 @@ There are three parts for configuration file of service and deployment:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-deployment > name of dep 
   labels:
     app: nginx
-spec:
-  replicas: 2
+spec: > specification for deployment
+  replicas: 2 > number of replicas 
   selector:
     matchLabels:
       app: nginx
-  template:
+  template: > blueprint for pods 
     metadata:
       labels:
         app: nginx
-    spec:
+    spec:  > specification for pods
       containers:
       - name: nginx
         image: nginx:1.16
