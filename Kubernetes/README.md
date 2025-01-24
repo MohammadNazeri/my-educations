@@ -85,6 +85,29 @@ There are three parts for configuration file of service and deployment:
 1. metadata > Determine the kind of components e.g. service, deployment, etc.
 2. specification > features of component
 3. status > It is related to runtime. Kubernetes always compares the specification part with the current status and if there is a difference (e.g. number of pods) it tries to fit it (self-healing). These data comes from etcd.
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.16
+        ports:
+        - containerPort: 8080
+```
 ### pod configuration
 It is inside of the specification(spec) part with the title "template". It has its own metadata and spec parts. 
 
