@@ -16,6 +16,7 @@
 
  ![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/cf4d2676-544b-4dbb-bc82-dcee70458dde)
 
+## Node 
 Nodes consist of:
 * Virtual Network
 * Service: When a pod crashes and dies its service remains unchanged until a new pod restart. Two functionalities: 1. keep permanent IP address  2. load balancer. 
