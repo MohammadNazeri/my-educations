@@ -61,6 +61,7 @@ It just uses for starting and deleting a cluster.
 * minikube service [service name] > Minikube will open a tunnel to the specified service, allowing you to access it via a local URL. This is particularly useful during development and testing phases when you need to interact with services running inside your Kubernetes cluster.
 ```
 #### kubectl
+```
 * kubectl get nodes > shows all nodes
 * kubectl get pod
 * kubectl get services
@@ -72,6 +73,7 @@ It just uses for starting and deleting a cluster.
 * kubectl exec -it [podname] --bin/bash > it gives the terminal of application container
 * kubectl delete deployment [deployment name]
 * kubectl apply -f [configuration file].yaml 
+```
 
 ## YAML file
 There are three parts for configuration file of service and deployment:
