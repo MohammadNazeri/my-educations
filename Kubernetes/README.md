@@ -74,7 +74,7 @@ It just uses for starting and deleting a cluster.
 * kubectl describe pod [podname]
 * kubectl exec -it [podname] --bin/bash > it gives the terminal of application container
 * kubectl delete deployment [deployment name]
-* kubectl apply -f [configuration file].yaml 
+* kubectl apply -f [configuration file].yaml > To create or update componenets in the file
 ```
 
 <img src="https://github.com/user-attachments/assets/f09a0958-b849-447a-9496-238751fa3e3b" style="width: 50%;" />
