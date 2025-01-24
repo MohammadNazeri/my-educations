@@ -7,7 +7,7 @@
   * etcd: It is a key-value store of a cluster state, configuration, and coordination (cluster brain). it keeps all data and every change in a cluster except application data like data base that is in another storage. 
 * Node (Worker node can be virtual or physical machine) contains:
   * pods:  It is a wrapper of a container or containers. The smallest unit that is configured and interacted with. There is one pod per application. Each pod gets one IP address to communicate with other pods.
-  * container runtime
+  * container runtime: like docker negine
   * kubelet
   * kube proxey
 
