@@ -8,7 +8,7 @@
 * Node (Worker node can be virtual or physical machine) contains:
   * pods:  It is a wrapper of a container or containers. The smallest unit that is configured and interacted with. There is one pod per application. Each pod gets one IP address to communicate with other pods.
   * container runtime: like docker negine
-  * kubelet
+  * kubelet: responsiblities: Manages Pods on Nodes+Communicates with the API Server+Runs Containers through container runtime
   * kube proxey
 
 ![image](https://github.com/user-attachments/assets/89c799b7-fbbc-4526-8d80-65771a48ecbc)
