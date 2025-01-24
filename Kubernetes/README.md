@@ -68,12 +68,16 @@ It just uses for starting and deleting a cluster.
 * kubectl get deployment
 * kubectl create deployment NAME --image=image [--dry-run] [options] > kubctl donot create pod directly. Instead, we should create deployment.
 * kubectl create deployment nginx-depl --image=nginx > get nginx from dockerhub and create deployment
+* kubectl get replicaset > show all replicasets which maintains a specified number of replicas of a Pod
 * kubectl logs [podname] > debug pods
 * kubectl describe pod [podname]
 * kubectl exec -it [podname] --bin/bash > it gives the terminal of application container
 * kubectl delete deployment [deployment name]
 * kubectl apply -f [configuration file].yaml 
 ```
+
+![image](https://github.com/user-attachments/assets/f09a0958-b849-447a-9496-238751fa3e3b)
+
 
 ## YAML file
 There are three parts for configuration file of service and deployment:
