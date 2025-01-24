@@ -42,10 +42,6 @@ Nodes consist of:
 
 <img src="https://github.com/user-attachments/assets/03166db3-b98f-4421-9f57-cb2ec0e85ab1" style="width: 50%;" />
 
-## Master
-Master consists of:
-1. API server: Serve the Kubernetes API+ Handle Requests+Authorization and Authentication
-
 ## Minikube 
 * Minikube sets up a lightweight Kubernetes cluster on your local system, allowing you to experiment with Kubernetes features and deploy applications without needing access to a full-scale production cluster.
 * kubectl:  It is a command-line tool for interacting with Kubernetes clusters.
