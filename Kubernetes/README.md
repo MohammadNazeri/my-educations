@@ -99,7 +99,7 @@ metadata:
 spec: > specification for deployment
   replicas: 2 > number of replicas 
   selector:
-    matchLabels:
+    matchLabels: > match all the labels with "app: nginx" to create that connection
       app: nginx
   template: > blueprint for pods 
     metadata:
@@ -113,18 +113,22 @@ spec: > specification for deployment
         - containerPort: 8080
 ```
 ### Service
+* Connection of components will be done through labels, selectors, and ports.
+* metadata has labels and spec contains selectors.
+* matchlables connect all labels by making connection among deployment and pods. 
+
 ```
 apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
 spec:
-  selector:
+  selector: > make connection between this service and deployment with the same label.
     app: nginx
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 80 > service is listening to this port 
+      targetPort: 8080  > pod is listening to this port to recieve the packets. This item should match with "containerPort" in spec of deployment
 ```
 ### pod configuration
 It is inside of the specification(spec) part with the title "template". It has its own metadata and spec parts. 
