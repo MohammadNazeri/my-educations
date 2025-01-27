@@ -4,7 +4,7 @@
 
 ![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/b86c1019-09f8-4d75-a522-fe1f1f8c23fb)
 
-### mongodb.yaml service-internal.yaml
+### mongodb DB and service internal yaml
 We plan to use mongo docker image. By checking page of mongo in dockerhub, we configured below.
 ```
 ...
@@ -47,3 +47,57 @@ type: Opaque > It is default. we can change to other types.
 to fill username and password in a secret file, it is needed to encrypt them:
 * echo -n '[username]'|base64
 * echo -n '[password]'|base64
+
+### mongo express and external service yaml file
+```
+spec:
+      containers:
+      - name: mongo-express
+        image: mongo-express
+        ports:
+        - containerPort: 8081 > default port of mongo express based on dockerhub
+        env:
+        - name: ME_CONFIG_MONGODB_ADMINUSERNAME > username and password are in secret file
+          valueFrom:
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-username
+        - name: ME_CONFIG_MONGODB_ADMINPASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-password
+        - name: ME_CONFIG_MONGODB_SERVER > mongo db address
+          valueFrom: 
+            configMapKeyRef:
+              name: mongodb-configmap
+              key: database_url
+--- > it makes new document
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-express-service
+spec:
+  selector:
+    app: mongo-express
+  type: LoadBalancer  > To have a external access, there is two step: 1. define type as loadbalancer 2. nodePort for external access
+  ports:
+    - protocol: TCP
+      port: 8081
+      targetPort: 8081
+      nodePort: 30000 > port for external IP address
+```
+Type of services can be internal(Cluster IP) or external (LoadBalancer). Internal and External services both have internal IP address and port number. Only external service has enxternal IP address and port number(internalport:externalport). 
+By default, Internal service get Internal Ip address. We need to set external IP address with below command:
+```
+minikube service [external service name]
+```
+### config map
+```
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongodb-configmap
+data:
+  database_url: mongodb-service > it is the name of service
+```
