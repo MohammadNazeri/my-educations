@@ -130,8 +130,11 @@ spec:
       port: 80 > service is listening to this port 
       targetPort: 8080  > pod is listening to this port to recieve the packets. This item should match with "containerPort" in spec of deployment
 ```
-### pod configuration
-It is inside of the specification(spec) part with the title "template". It has its own metadata and spec parts. 
+To get the status from etcd run below command:
+
+```
+kubctl get deployment ngnix-deployment 
+```
 
 ## Namespace
 * namespace is used to organize resources.
