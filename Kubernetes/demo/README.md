@@ -4,7 +4,7 @@
 
 ![image](https://github.com/MohammadNazeri/my-educations/assets/109389707/b86c1019-09f8-4d75-a522-fe1f1f8c23fb)
 
-### mongodb.yaml
+### mongodb.yaml service-internal.yaml
 We plan to use mongo docker image. By checking page of mongo in dockerhub, we configured below.
 ```
 ...
@@ -25,6 +25,18 @@ We plan to use mongo docker image. By checking page of mongo in dockerhub, we co
             secretKeyRef:
               name: mongodb-secret
               key: mongo-root-password
+---  > new document started. The deployment and servie are in the same file bacause they belong together.
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+spec:
+  selector:
+    app: mongodb > connecting this service to pod with app:mongodb label. Service will find the pod and attach to
+  ports:
+    - protocol: TCP
+      port: 27017 > service port
+      targetPort: 27017 > pod port of deployment 
 ```
 
 ### Secret
