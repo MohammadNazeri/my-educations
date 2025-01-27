@@ -82,9 +82,10 @@ It just uses for starting and deleting a cluster.
 
 ## YAML file
 There are three parts for configuration file of service and deployment:
-1. metadata > Determine the kind of components e.g. service, deployment, etc.
-2. specification > features of component
-3. status > It is related to runtime. Kubernetes always compares the specification part with the current status and if there is a difference (e.g. number of pods) it tries to fit it (self-healing). These data comes from etcd.
+1. metadata > typically contains information that helps identify and manage the resource being defined.
+2. specification > configuration of component. deployment and service have their own configuration
+3. status > It is automatically generated and added by Kubernetes. In runtime, Kubernetes always compares the specification part with the current status and if there is a difference (e.g. number of pods) it tries to fit it (self-healing). Kubernetes get this status data from etcd.
+Kind shows the kind of component. 
 ```
 apiVersion: apps/v1
 kind: Deployment
