@@ -81,6 +81,8 @@ It just uses for starting and deleting a cluster.
 
 
 ## YAML file
+* The file is so strict indentation
+* Generally store the config file with your code.
 There are three parts for configuration file of service and deployment:
 1. metadata > typically contains information that helps identify and manage the resource being defined.
 2. specification > configuration of component. deployment and service have their own configuration
