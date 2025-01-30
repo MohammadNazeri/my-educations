@@ -26,6 +26,7 @@ The use case of namespace is follows:
 
 <img src="https://github.com/user-attachments/assets/f004aa08-971c-457d-946f-8a3151692331" style="width: 50%;" />
 
+
 We can group the components based on:
 * Different application: Database, Monitoring, etc
 * Different project of each different team
