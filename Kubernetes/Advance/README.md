@@ -7,8 +7,8 @@
   * kube-public > It contains publicly accessible data like configmap which contains cluster information: ```kubectl cluster-info```
   * kube-node-lease > It contains the most important data of nodes
   * default > It uses at beginning when there is not any new namespace 
-* There could be multiple namespace in a cluster.
-* They can be created in config files.
+### Create Namespace
+They can be created in config files.
   ```
   ...
   metadata:
