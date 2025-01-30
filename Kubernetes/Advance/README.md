@@ -24,7 +24,7 @@ The use case of namespace is follows:
 * Resource sharing: Having two different versions of the same project
 * Access and resource limits on Namespace: each team limits to access to their namespace. Also, we can limit the resources(CPU,RAM, etc) that each namespace can use.
 
-![image](https://github.com/user-attachments/assets/f004aa08-971c-457d-946f-8a3151692331)
+<img src="https://github.com/user-attachments/assets/f004aa08-971c-457d-946f-8a3151692331" style="width: 50%;" />
 
 We can group the components based on:
 * Different application: Database, Monitoring, etc
