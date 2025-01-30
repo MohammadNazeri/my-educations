@@ -20,7 +20,7 @@ They can be created through ```kubeclt create namespace [name]``` or in config f
 The use case of namespace is follows:
 * Organizing components (deployment, replicasets, services, configmaps)
 * Having multiple teams: Maybe they create projects with same name which overwrite each other files
-* Service sharing: Using common Service in different project(cluster)
+* Service sharing: Using common Service (Elasti,Nginx) in different project(cluster)
 * Resource sharing: Having two different versions of the same project
 * Access and resource limits on Namespace: each team limits to access to their namespace. Also, we can limit the resources(CPU,RAM, etc) that each namespace can use.
 
