@@ -8,7 +8,7 @@
   * kube-node-lease > It contains the most important data of nodes
   * default > It uses at beginning when there is not any new namespace 
 ### Create Namespace
-They can be created in config files.
+They can be created through ```kubeclt create namespace [name]``` or in config files:
   ```
   ...
   metadata:
@@ -16,6 +16,5 @@ They can be created in config files.
    namespace: my-namespace
   ...
   ```
-* kubectl get namespace
-* kubeclt create namespace [name]
+* 
 * 
