@@ -35,7 +35,7 @@ We can't access most resources from another Namespace
 * Each namespace should have their own configmap/secret. They can't access to each other configmap/secret even they are the same.
 * Services (database, Nginx, Elastic) can be shared across namespaces. It means we can address a service from configmap of different namespaces like below: [service].[namespace]
 
-  ![image](https://github.com/user-attachments/assets/473e0f46-3c63-4109-bafc-33ba39926efc)
+<img src="https://github.com/user-attachments/assets/473e0f46-3c63-4109-bafc-33ba39926efc" style="width: 50%;" />
 
 
 NOTE: It is not needed to use kubernetes for small projects and less than 10 users.
