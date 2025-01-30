@@ -37,5 +37,11 @@ We can't access most resources from another Namespace
 
 <img src="https://github.com/user-attachments/assets/473e0f46-3c63-4109-bafc-33ba39926efc" style="width: 50%;" />
 
+### Componenets in namespace
+Some components can't be created within a namespace and they leave globally in cluster like volume, node.
+```
+kubectl api-resource --namespaced=false > list of resource can't be within namespace
+kubectl api-resource --namespaced=true > list of resource can be within namespace
+```
 
 NOTE: It is not needed to use kubernetes for small projects and less than 10 users.
