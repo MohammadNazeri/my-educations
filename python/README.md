@@ -193,3 +193,13 @@ poetry shell > to enter to virtual environment
 
 ```
 * poetry keeps the track of changes in poetry.lock
+
+### Name convension
+Summary of the Conventions:
+Variables: snake_case (user_age, total_amount)
+Functions: snake_case (calculate_total(), print_message())
+Classes: CamelCase (MyClass, BankAccount)
+Constants: UPPER_SNAKE_CASE (PI, MAX_ATTEMPTS)
+Modules/Packages: lowercase, no underscores (math, my_module)
+Internal/Private Variables: _single leading underscore (_internal_var)
+Special Methods: double leading and trailing underscores (__init__, __str__)
