@@ -52,7 +52,9 @@ NOTE: It is not needed to use kubernetes for small projects and less than 10 use
 
 ![image](https://github.com/user-attachments/assets/0eca1dd5-36b0-4786-b8d5-cfa6d0304b65)
 
-
+## Ingress controller
+It is a component in Kubernetes that manages and enforces the rules defined in Ingress resources. It is responsible for handling external HTTP(S) traffic and routing it to the appropriate internal services.
+It is a pod or set of pods that run in a node or cluster.
 
 
 ## YAML file
