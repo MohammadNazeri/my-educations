@@ -54,10 +54,20 @@ NOTE: It is not needed to use kubernetes for small projects and less than 10 use
 
 ## Ingress controller
 It is a component in Kubernetes that manages and enforces the rules defined in Ingress resources. It is responsible for handling external HTTP(S) traffic and routing it to the appropriate internal services.
-It is a pod or set of pods that run in a node or cluster.
+It is a pod or set of pods that run in a node or cluster. Hence, ingress controller is entry point to cluster.   
+There are many third-party implementation that you should choose which one to install. 
+NOTE: If using a cloud provider, they have their own virtualized load balancer. By accessing the address of cloud provider, the load balancer redirect request to ingress controller. If using bare metal, the entry point should be defined with ourself. 
 
+```
+minikube addons enable ingress > install ingress controller
+kubectl get pod -ns kube-system > to ingress controller pod
+```
 
-## YAML file
+## Ingress
+It is kind of component to define routing rules in a cluster. 
+Ingress controller evaluate and manage all the rules.
+
+### Ingress YAML file
 ```
 apiVersion: networking.k8s.io/v1
 kind: Ingress 
