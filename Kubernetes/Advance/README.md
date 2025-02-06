@@ -45,3 +45,35 @@ kubectl api-resource --namespaced=true > list of resource can be within namespac
 ```
 
 NOTE: It is not needed to use kubernetes for small projects and less than 10 users.
+
+# Ingress
+* Ability to connect to pod through extrnal. It can handle some optioins like domain name and https.
+* The external service can be used just for testing by access through IP address and port
+
+![image](https://github.com/user-attachments/assets/0eca1dd5-36b0-4786-b8d5-cfa6d0304b65)
+
+
+
+
+## YAML file
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress 
+metadata:
+  name: name
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:  >  defing rules
+    - host: app.com  >  The host that user enter in browser > Forward all requests to internal service in below 
+      http: > it is protocol that incoming request gets forwarded to internal service (it is related to second step)
+        paths: > define all possible path after host 
+        - path: /
+          pathType: Exact
+          backend: > where the incoming request redirected 
+            service:
+              name: my-service > internal service name
+              port: 
+                number: 8080 > internal service port (not targetport)
+
+```
