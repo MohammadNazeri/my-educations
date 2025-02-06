@@ -89,3 +89,16 @@ spec:
                 number: 8080 > internal service port (not targetport)
 
 ```
+## Configure TLS certificate
+To configure https forwarding in ingress
+```
+...
+spec:
+ tls:
+  - hosts:
+   - myapp.com
+   secretName: myapp-secret-tls
+ rules:
+
+...
+```
