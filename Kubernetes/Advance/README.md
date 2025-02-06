@@ -92,13 +92,26 @@ spec:
 ## Configure TLS certificate
 To configure https forwarding in ingress
 ```
+kind: Ingress
 ...
 spec:
  tls:
-  - hosts:
+  - hosts: >  the same host 
    - myapp.com
-   secretName: myapp-secret-tls
+   secretName: myapp-secret-tls > secret that hold tls certificate
  rules:
 
 ...
+```
+We should create secret componenet like below:
+```
+apiVersion: v1
+kind: Secret
+metadata:
+  name: myapp-secret-tls
+  namespace: default > It should be in the same namespace as ingress component 
+data:
+  tls.crt: dXNlcm5hbWU=  # base64 encoded "username"
+  tls.key: cGFzc3dvcmQ=  # base64 encoded "password"
+type: kubernetes.io/tls
 ```
