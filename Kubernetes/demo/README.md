@@ -94,7 +94,8 @@ minikube service [external service name]
 ```
 The difference of port, targetPort, and nodePort is as follows:
 
-![image](https://github.com/user-attachments/assets/ca21b106-7162-42a6-a303-17eb45513645)
+<img src="https://github.com/user-attachments/assets/ca21b106-7162-42a6-a303-17eb45513645" style="width: 50%;" />
+
 
 ### config map
 ```
