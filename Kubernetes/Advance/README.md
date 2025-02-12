@@ -115,3 +115,13 @@ data:
   tls.key: cGFzc3dvcmQ=  # base64 encoded "password"
 type: kubernetes.io/tls
 ```
+## Helm
+It is package manager for Kubernetes. It is convenient way for packaging collections of kubernetes yaml files and distributing them in private and public registery. 
+
+### Helm chart
+* A Helm chart is a package of pre-configured Kubernetes resources that define an application, service, or infrastructure component for deployment in a Kubernetes cluster.
+* Deployment of some services are standard and we can use existing yaml file for them. Hence, these written yamle file packaged and push them into registeries.
+
+```
+helm search hub/repo <keyword>  > to find your helm chart in repositories
+```
