@@ -146,3 +146,8 @@ mychart/  >  name of chart
   templates/  >  templates files
 ...
 ```
+
+## Release management
+* In helm version 2, Triller was responsible to run helm yaml file inside kubernetes cluser. Because of security issues, vesion 3 removed Triller.
+
+![image](https://github.com/user-attachments/assets/23546376-0433-4c0e-b5e1-c77fe42dabcd)
