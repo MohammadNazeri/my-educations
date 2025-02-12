@@ -124,5 +124,25 @@ It is package manager for Kubernetes. It is convenient way for packaging collect
 
 ```
 helm search hub/repo <keyword>  > to find your helm chart in repositories
+helm install <helm chart name>
 ```
 ### Helm templating engine
+* A templating engine in Helm allows dynamic generation of Kubernetes resource definitions using templates, variables, and logic. It replaces hardcoded values with configurable inputs, making charts reusable and flexible.
+* We can define a common blueprint for microservices (template file) and values of each microservices are replaced by placeholders. These values are stored in values.yaml file.
+* We can use these template yamle file in CI/CD pipeline to replace the values on the fly before deploying them.
+* Use case: when we have three stages for our project(development, staging, and production), each of them run on a kubernetes cluster. instead of defining three different yaml files, helm templating give us the ability to define one yaml file and change the value for each stage. Hence we should have three different values.yaml file. follow command can install them:
+```
+helm install --values=my-values.yaml <chartname>
+```
+![image](https://github.com/user-attachments/assets/14e2f062-6696-45ab-88f1-801055b5ba18)
+
+
+#### helm chart structure
+```
+mychart/  >  name of chart
+  chart.yaml  >  meta info of chart like name version dependencies
+  values.yaml  >  default values for template file. They can be overwrriten
+  charts/  >  chart dependencies
+  templates/  >  templates files
+...
+```
