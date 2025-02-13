@@ -203,6 +203,15 @@ spec:
       storage: 10Gi
 
 ```
+* Use the PVC in pods configuration
+```
+...
+  volumes:
+    - name: mypd
+      persistentVolumeClaim:
+        claimName: pvc-name
+...
+```
 
 
 ### Storage Class (SC) 
