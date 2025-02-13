@@ -186,8 +186,7 @@ spec:       >     in this section define storage backend
 ### Persistent volume claim (PVC)
 * Through PVC, applications can claim volum storage.
 
-![image](https://github.com/user-attachments/assets/e3e97709-9604-432b-ae3e-262a8b15bac2)
-
+<img src="https://github.com/user-attachments/assets/d4359455-9f2c-4f25-a1ec-79a8c5aaf3c7" style="width: 50%;" />
 
 ```
 kind: PersistentVolumeClaim
