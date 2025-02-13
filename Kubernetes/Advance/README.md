@@ -161,16 +161,25 @@ mychart/  >  name of chart
 
   
 ```
+
 apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: pv-name
-spec:
+spec:       >     in this section define storage backend
   capacity:
     storage: 5Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: slow
+  mountOptions:
+    - hard
+    - nfsvers=4.0
+  nfs:
+    path: /dir/path/on/nfs/server
+    server: nfs-server-ip-address
 ...
 ```
 ### Persistent volume claim (PVC)
