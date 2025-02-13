@@ -204,14 +204,54 @@ spec:
 
 ```
 * Use the PVC in pods configuration
+* PVC must be be the same namespace as pod using that PVC
 ```
 ...
-  volumes:
+  spec:
+  containers:  >   mount storage to container
+    - name: myfrontend
+      image: nginx
+      volumeMounts:
+      - mountPath: "/var/www/html"
+        name: mypd
+  volumes:  >  mount storage to pod
     - name: mypd
       persistentVolumeClaim:
         claimName: pvc-name
+
 ...
 ```
-
+NOTE: PV is in admin level (provision storage resource) and PVC is in user level (creates claim to PV). It separate the responsibilities. 
+NOTE: configmap and secret are a kind of local volume 
 
 ### Storage Class (SC) 
+* It provisions PV dynamically whenever PVC claims it. The process is automated
+
+```
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: storage-class-name
+provisioner: kubernetes.io/aws-ebs > which provisioner to create persistent volume. each storage has its own provisioner 
+parameters:
+  type: io1
+  iopsPerGB: "10"
+  fsType: ext4
+
+```
+* SC is used in PVC like below
+```
+...
+spec:
+     accessModes:
+     - ReadWriteOnce
+     resources:
+       requests:
+         storage: 100Gi
+     storageClassName: storage-class-name  > name of SC
+```
+* By claiming storage through PVC, SC will create it using provisioner
+
+<img src="https://github.com/user-attachments/assets/ef90be59-eb52-40c6-b2a4-e18d9033507a" style="width: 50%;" />
+
+
