@@ -155,6 +155,7 @@ mychart/  >  name of chart
 ## Volume
 ### Persistent volume (PV)
 * Storage that does not depend on pod lifecycle or kuberenets cluster and it should be available on all nodes
+* PV are not in any namespace. They are availabe to whole cluster.
 * Kuberentes does not care about actual storage. It gives PV componenet as interface to the actual storage
 
 <img src="https://github.com/user-attachments/assets/e5c8779c-4035-4162-9eac-99d73482f91f" style="width: 50%;" />
@@ -172,15 +173,37 @@ spec:       >     in this section define storage backend
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Recycle
+  persistentVolumeReclaimPolicy: Recycle  >  additional parameter 
   storageClassName: slow
   mountOptions:
     - hard
     - nfsvers=4.0
-  nfs:
+  nfs: > storage backend and its parameters
     path: /dir/path/on/nfs/server
     server: nfs-server-ip-address
 ...
 ```
 ### Persistent volume claim (PVC)
+* Through PVC, applications can claim volum storage.
+
+![image](https://github.com/user-attachments/assets/e3e97709-9604-432b-ae3e-262a8b15bac2)
+
+
+```
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvc-name
+spec:
+  storageClassName: manual
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+
+```
+
+
 ### Storage Class (SC) 
