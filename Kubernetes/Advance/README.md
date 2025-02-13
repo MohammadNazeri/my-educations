@@ -157,7 +157,7 @@ mychart/  >  name of chart
 * Storage that does not depend on pod lifecycle or kuberenets cluster and it should be available on all nodes
 * Kuberentes does not care about actual storage. It gives PV componenet as interface to the actual storage
 
-<img src="![image](https://github.com/user-attachments/assets/e5c8779c-4035-4162-9eac-99d73482f91f)" style="width: 50%;" />
+<img src="https://github.com/user-attachments/assets/e5c8779c-4035-4162-9eac-99d73482f91f" style="width: 50%;" />
 
   
 ```
