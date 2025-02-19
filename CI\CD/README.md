@@ -71,8 +71,8 @@ deploy: > Deployment server: To connect to server, here uses ssh command. It nee
 ```
 
 In gitlab>CI/CD:
-* pipeline: check the pipeline
-* Jobs: the logs can be checked here.
+* Pipeline: show the list view of all pipeline execution and their state (passed)
+* Jobs: show list of jobs. Also, the logs of jobs can be checked here.
 
 ![image](https://github.com/user-attachments/assets/9d56574f-9231-4af5-8f06-5dd964a2c230)
 
