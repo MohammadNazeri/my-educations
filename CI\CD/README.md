@@ -70,6 +70,7 @@ deploy: > Deployment server: To connect to server, here uses ssh command. It nee
 
 ```
 
+### Check Pipeline 
 In gitlab>CI/CD:
 * Pipeline: show the list view of all pipeline execution and their state (passed)
 * Jobs: show list of jobs. Also, the logs of jobs can be checked here.
@@ -77,6 +78,9 @@ In gitlab>CI/CD:
 ![image](https://github.com/user-attachments/assets/9d56574f-9231-4af5-8f06-5dd964a2c230)
 
 
+### Define Scretry in Setting
+gitlab>settings> CI/CD > Variable to store passwords which should not be included in repository. 
+![image](https://github.com/user-attachments/assets/d8d3aba9-1660-4dc9-a6c8-35d3df66dd87)
 
 
 
