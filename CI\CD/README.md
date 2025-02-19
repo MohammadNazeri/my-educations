@@ -81,4 +81,5 @@ In gitlab>CI/CD:
 
 
 
+
 4. In pipeline three command have to be available: make 
