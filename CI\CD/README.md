@@ -87,8 +87,4 @@ gitlab>settings> CI/CD > Variable to store passwords which should not be include
 gitlab>settings> CI/CD > Variable to create a file to store SSH key. It is stored in file because we are going to reference it as a file.
   * At the end of file, you should add a new line.
     
-![image](https://github.com/user-attachments/assets/d3781434-78c6-4736-8626-9f4a3fae172e)
-
-
-
-4. In pipeline three command have to be available: make 
+![image](https://github.com/user-attachments/assets/1268d1ee-d23f-4875-9aae-9a48586d9c0b)
