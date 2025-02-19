@@ -70,7 +70,12 @@ deploy: > Deployment server: To connect to server, here uses ssh command. It nee
 
 ```
 
-* In gitlab>Ci/CD>Jobs, the logs can be checked.
+In gitlab>CI/CD:
+* pipeline: check the pipeline
+* Jobs: the logs can be checked here.
+
+![image](https://github.com/user-attachments/assets/9d56574f-9231-4af5-8f06-5dd964a2c230)
+
 
 
 
