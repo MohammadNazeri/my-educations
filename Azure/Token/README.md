@@ -8,7 +8,8 @@ Tokens are digital identifiers that authenticate and authorize users without req
 
 ## How it works?
 
-![image](https://github.com/user-attachments/assets/435340d9-9788-4067-8d5d-a09170ea17f2)
+<img src="https://github.com/user-attachments/assets/435340d9-9788-4067-8d5d-a09170ea17f2" width="50%">
+
 
 
 
