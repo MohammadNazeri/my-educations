@@ -11,4 +11,4 @@ Tokens are digital identifiers that authenticate and authorize users without req
 
 
 [Resource] ()
-[Resource]((https://medium.com/@signmycode/understand-what-is-token-based-authentication-types-importance-use-cases-and-best-practices-8c1dbd08637a))
+[Resource](https://medium.com/@signmycode/understand-what-is-token-based-authentication-types-importance-use-cases-and-best-practices-8c1dbd08637a)
