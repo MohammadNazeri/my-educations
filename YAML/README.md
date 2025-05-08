@@ -37,3 +37,4 @@ microservices:
      port: 9000
      version: 1.7
 ```
+  * boolean value > ```deploy: false```
