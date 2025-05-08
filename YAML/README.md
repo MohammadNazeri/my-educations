@@ -31,10 +31,13 @@ microservices:
 ```
   * list > by adding - to first of line
 ```
-# microservices is a list with one item
+# microservices is a list with multi objects
 microservices:
   -  app: user-auth
      port: 9000
      version: 1.7
+  - app: shopping-cart
+    port: 9002
+    version: 1.9
 ```
   * boolean value > ```deploy: false```
