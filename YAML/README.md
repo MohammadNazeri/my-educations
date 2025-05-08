@@ -65,6 +65,9 @@ The screenshot shows shell command with multiple lines
     * To pass the value there are two way:
       * assign values in value.yaml file > helm install mychart ./mychart -f values.yaml
       * pass them as CLI argument > helm install mychart ./mychart --set value.service.app=myapp
+  * Multiple yaml documents: separate component by ---
 
+
+<img src="https://github.com/user-attachments/assets/1c5830ce-0d20-4aff-aae2-f0fbc75412c6" style="width: 30%;" />
 
 
