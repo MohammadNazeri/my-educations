@@ -22,10 +22,10 @@ While YAML is similar to JSON in that both are data serialization formats, YAML 
   * object > by using indentation
     * it has key with (probably) some attributes
 
-  ```
+```
 # All of lines below are one object in which has multi attributes
 microservices:
   app: user-auth
   port: 9000
   version: 1.7
-  ```
+```
