@@ -29,3 +29,11 @@ microservices:
   port: 9000
   version: 1.7
 ```
+  * list > by adding - to first of line
+```
+# microservices is a list with one item
+microservices:
+  -  app: user-auth
+     port: 9000
+     version: 1.7
+```
