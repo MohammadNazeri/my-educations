@@ -11,12 +11,13 @@ Brian Eadie
   * Jonathan Hutchinson
   * Ilona Toth
 
-Elena Giovannetti   
-  * Georges Bourret
+  * Elena Giovannetti   
 
-Maribel Jimenez   
-  * Lokesh Kumar K
+Georges Bourret
+* Maribel Jimenez   
 
-Eric Demers   
-  * Imran Ajmal > ottawa
+Lokesh Kumar K
+* Eric Demers   
+
+Imran Ajmal > ottawa
   * Layal Karaki
