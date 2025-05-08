@@ -49,3 +49,14 @@ microservices:
 microservice: [user-auth, shopping-cart]
 ```
   * boolean value > ```deploy: false```
+  * multi line strings > lines after | will be interpreted  as a multi lines string
+```
+mulltilinestring:|
+this is multi line string
+this is multi line string
+this is multi line string
+```
+
+<img src="https://github.com/user-attachments/assets/9f76613b-0da0-4cf2-9acd-f66f37dbbaf6" style="width: 50%;" />
+
+
