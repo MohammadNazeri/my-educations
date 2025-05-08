@@ -39,10 +39,12 @@ microservices:
   - app: shopping-cart
     port: 9002
     version: 1.9
+
 # list of simple value
 microservices:
   - user-auth
   - shopping cart
+
 # alternative way of defining list
 microservice: [user-auth, shopping-cart]
 ```
