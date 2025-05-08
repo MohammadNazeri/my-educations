@@ -43,5 +43,7 @@ microservices:
 microservices:
   - user-auth
   - shopping cart
+# alternative way of defining list
+microservice: [user-auth, shopping-cart]
 ```
   * boolean value > ```deploy: false```
