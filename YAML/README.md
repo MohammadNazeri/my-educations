@@ -59,4 +59,12 @@ this is multi line string
 The screenshot shows shell command with multiple lines  
 <img src="https://github.com/user-attachments/assets/9f76613b-0da0-4cf2-9acd-f66f37dbbaf6" style="width: 30%;" />
 
+  * Enviromental variable > $ shows value of variables
+  * Placeholder: {{.value.service.app}} it find the value inside "value object">service object > app
+    * NOTE: mostly it uses in helm or ansible
+    * To pass the value there are two way:
+      * assign values in value.yaml file > helm install mychart ./mychart -f values.yaml
+      * pass them as CLI argument > helm install mychart ./mychart --set value.service.app=myapp
+
+
 
