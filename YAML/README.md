@@ -1,5 +1,6 @@
 # YAML
 * YAML is a human-readable data serialization format used for data storage and transmission.
+* Application use standard format to send data to each other such as YAML, JSON, XML.
 ### YAML vs JSON 
 While YAML is similar to JSON in that both are data serialization formats, YAML offers:
   * Supports comments (JSON doesn't).
