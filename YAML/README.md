@@ -56,7 +56,7 @@ this is multi line string
 this is multi line string
 this is multi line string
 ```
-
-<img src="https://github.com/user-attachments/assets/9f76613b-0da0-4cf2-9acd-f66f37dbbaf6" style="width: 50%;" />
+The screenshot shows shell command with multiple lines
+<img src="https://github.com/user-attachments/assets/9f76613b-0da0-4cf2-9acd-f66f37dbbaf6" style="width: 70%;" />
 
 
