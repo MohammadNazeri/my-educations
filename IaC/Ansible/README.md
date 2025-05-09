@@ -2,7 +2,7 @@
 * It is a tool to automate IT tasks.
 * The tasks could be repetitive tasks such as updates, back ups, create user, assign group, etc.
 
-  ![image](https://github.com/user-attachments/assets/ba38ac35-bf7d-413e-bf80-d03897b2788f)
+  <img src="https://github.com/user-attachments/assets/ba38ac35-bf7d-413e-bf80-d03897b2788f" style="width: 50%;" />
 
 ### Advantages
 * Execute tasks from your own machine (agentless)
@@ -18,7 +18,7 @@
 * It gets pushed to the target server and does its work and get removed.
 * list of prepared modules is in Ansible Official Documentation.
 
-![image](https://github.com/user-attachments/assets/5072fd34-4947-46b5-8fd2-9a517afec8a5)
+  <img src="https://github.com/user-attachments/assets/5072fd34-4947-46b5-8fd2-9a517afec8a5" style="width: 50%;" />
 
 ## Ansible Playbook
 * Sequential module groups to tasks
@@ -52,7 +52,7 @@
 * Ansible has host file which contains list of machine (inventory)
 * The IP address or host names could be a group 
 
-![image](https://github.com/user-attachments/assets/d3256076-2dcf-4e14-8f10-f9faa9f9973c)
+  <img src="https://github.com/user-attachments/assets/d3256076-2dcf-4e14-8f10-f9faa9f9973c" style="width: 50%;" />
 
 NOTE: 
 * Ansible alows you to reproduce application across many enviroment like docker contianer, cloud instance, bare metal, etc.
