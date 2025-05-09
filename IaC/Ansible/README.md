@@ -62,5 +62,6 @@ It is UI dashboard from redhat to automate task, configure permissions, manage i
 
 ## Compare Tools:
 
-![image](https://github.com/user-attachments/assets/d6b1df4f-7992-462a-9fd4-1de8d961bb03)
+  <img src="https://github.com/user-attachments/assets/d6b1df4f-7992-462a-9fd4-1de8d961bb03" style="width: 50%;" />
+
 
