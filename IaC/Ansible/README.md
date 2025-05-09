@@ -25,7 +25,7 @@
 * a play is a single set of instructions (tasks) that you want to run on a group of hosts (like code below). A playbook is made up of one or more plays.
 
 ```
-- name: instal and start nginx server 
+- name: instal and start nginx server > play name
 - hosts: webservers  >  target machine in which tasks should be executed
   remote_user: root  >  with which user those tasks should be executed
   vars:
@@ -48,4 +48,10 @@
 
 ```
 
-![image](https://github.com/user-attachments/assets/a044f027-15da-4997-8ddf-0f0400a1da49)
+### Ansible inventory list 
+* Ansible has host file which contains list of machine (inventory)
+* The IP address or host names could be a group 
+
+![image](https://github.com/user-attachments/assets/d3256076-2dcf-4e14-8f10-f9faa9f9973c)
+
+
