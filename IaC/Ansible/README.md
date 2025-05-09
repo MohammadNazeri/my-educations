@@ -59,3 +59,8 @@ NOTE:
 * Ansible can manage docker container, its host, and the all services like network and storage.
 ### Ansible Tower
 It is UI dashboard from redhat to automate task, configure permissions, manage inventory
+
+## Compare Tools:
+
+![image](https://github.com/user-attachments/assets/d6b1df4f-7992-462a-9fd4-1de8d961bb03)
+
