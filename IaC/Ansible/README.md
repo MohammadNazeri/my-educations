@@ -54,4 +54,8 @@
 
 ![image](https://github.com/user-attachments/assets/d3256076-2dcf-4e14-8f10-f9faa9f9973c)
 
-
+NOTE: 
+* Ansible alows you to reproduce application across many enviroment like docker contianer, cloud instance, bare metal, etc.
+* Ansible can manage docker container, its host, and the all services like network and storage.
+### Ansible Tower
+It is UI dashboard from redhat to automate task, configure permissions, manage inventory
