@@ -1,3 +1,12 @@
+# Microsoft Entra:
+Microsoft Entra is a suite of identity and access management (IAM) products from Microsoft. It is designed to help organizations manage and secure access to digital resources across cloud and on-premises environments. Entra is part of Microsoft's broader security and compliance ecosystem.
+ ### Key Components of Microsoft Entra
+ 1. Microsoft Entra ID
+ 2. Microsoft Entra Permissions Management
+ 3. Microsoft Entra Verified ID
+ 4. Microsoft Entra Workload ID
+ 5. Microsoft Entra ID Governance
+
 # Microsoft Entra ID:
 Microsoft Entra ID (formerly known as Azure Active Directory or Azure AD) is Microsoft's identity and access management (IAM) service, offering a range of solutions for managing users, groups, devices, and resources securely across cloud and on-premises environments. It provides centralized authentication, authorization, and security management for users, apps, and devices within an organization.
 
