@@ -20,8 +20,8 @@ Microsoft Entra ID (formerly known as Azure Active Directory or Azure AD) is Mic
 #### Step 3: Assign Roles to the Application
 * Option A: Assign Entra (Directory) Role to the Service Principal
 * Option B: Assign Custom App Roles to Users or Other Apps
-5. Grant API Permissions
-6. Add a Client Secret or Certificate
+#### Step 4. Grant API Permissions
+#### Step 5. Add a Client Secret or Certificate
   * To authenticate as the Service Principal, New client secret
 
 ## Entra ID Features
