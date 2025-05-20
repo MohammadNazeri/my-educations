@@ -11,9 +11,18 @@ Microsoft Entra is a suite of identity and access management (IAM) products from
 Microsoft Entra ID (formerly known as Azure Active Directory or Azure AD) is Microsoft's identity and access management (IAM) service, offering a range of solutions for managing users, groups, devices, and resources securely across cloud and on-premises environments. It provides centralized authentication, authorization, and security management for users, apps, and devices within an organization.
 
 ## Register application in Enter ID
-1. Register application in Enter ID
-2. Assign Roles to the Application
-3. Grant API Permissions
+#### Step 1: Register application in Enter ID
+1. App Registrations
+2. After Registration > Application (client) ID, Directory (tenant) ID
+#### Step 2: Service Principal Is Created Automatically
+* When you register the app, Entra ID automatically creates a Service Principal (SP) in your tenant.
+* To view the SP > Go to Enterprise Applications
+#### Step 3: Assign Roles to the Application
+* Option A: Assign Entra (Directory) Role to the Service Principal
+* Option B: Assign Custom App Roles to Users or Other Apps
+5. Grant API Permissions
+6. Add a Client Secret or Certificate
+  * To authenticate as the Service Principal, New client secret
 
 ## Entra ID Features
 * Identity Management: It allows for managing user identities and groups, providing tools for user lifecycle management (e.g., creating, updating, and deleting accounts).
