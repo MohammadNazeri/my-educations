@@ -1,6 +1,7 @@
 * wsl --install
 * wsl --list
 * wsl --export Ubuntu c:\Users\eznomha\mywsl\exports\[os name] > export clean instance
+* Download wsl version of ubuntu from website and import it
 * wsl --import [os name] c:\Users\eznomha\mywsl\instances\[os name] c:\Users\eznomha\mywsl\exports\ubuntudocker > create new WSL instance
 * wsl --unregister Ubuntu-22.04 > delete instance
 * To run vistual studio with docker inside WSL
