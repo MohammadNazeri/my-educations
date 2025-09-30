@@ -53,7 +53,7 @@ result = my_mock.some_method()
 print(result)  # Output: 10
 print(my_mock.some_method.called)  # True
 ```
-MagicMock
+### MagicMock
 MagicMock is a subclass of Mock that has default implementations of Python magic methods (like __len__, __getitem__, etc.).
 Use MagicMock when you need to mock objects that rely on special methods like __len__, __getitem__, etc.
 ```
