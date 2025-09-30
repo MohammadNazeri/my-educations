@@ -99,3 +99,6 @@ def test_process_data(mocked_get_data):
     result = math_ops.process_data()
     assert result == 10
 ```
+#### patch & mock 
+* Mock() creates a mock object — it's like saying “Here’s a fake thing.”
+* patch() temporarily replaces a real thing with a fake thing (a mock) — usually to replace something imported from another module.
