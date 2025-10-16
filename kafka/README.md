@@ -11,7 +11,10 @@
 * Enables chain reaction: by ordering a product, it generate squence of action to deliver to user
 * Real-time analytics: like Uber whichi send location in real-time
 
-
+## Kafka performance
+* In big project, a Kafka topic is divided into one or more partitions.
+* A consumer group is a set of consumers that work together to read data from a topic. This makes it possible to process data in parallel.
+<img src="https://github.com/user-attachments/assets/252d4f59-a090-4d86-a0be-d4f3ef0837e0" style="width: 50%;" />
 
 
 
