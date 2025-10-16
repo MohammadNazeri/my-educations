@@ -6,6 +6,9 @@
 * Events are stored in Topics
 * Cosumer(microservices) subscribe to Topics. Each respective consumer gets notified when a new event is added to that topic.
 <img src="https://github.com/user-attachments/assets/b2373ea9-71b3-44d2-b28f-77d677c2a95f" style="width: 50%;" />
+## Functionality of Kafka
+* Enables chain reaction: by ordering a product, it generate squence of action to deliver to user
+* Real-time analytics: like Uber whichi send location in real-time
 
 
 
