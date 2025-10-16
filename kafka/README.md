@@ -28,6 +28,8 @@
 
 ## Kafka Partition
 * In big project, a Kafka topic is divided into one or more partitions.
+  * Events with the same Key are written to the same partition.
+  * The benefits: Scalability, paralelism, ordering, Fault Tolerance, Logical grouping.
 * A consumer group is a set of consumers that work together to read data from a topic. This makes it possible to process data in parallel.
 <img src="https://github.com/user-attachments/assets/252d4f59-a090-4d86-a0be-d4f3ef0837e0" style="width: 50%;" />
 
