@@ -41,34 +41,7 @@
 
 ## Kafka VS others
 * Kafka keeps all message after consumption, unlike others.
-  *  
+  *  Later, those kept data can be used for analytics.
 
-## Data Persistence
-* After consuming data from topics, there keeps in broker.
-* Later, those kept data can be used for analytics.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Event 
-## Chain of Events
-## Real-time Processing Stream
-## Stream API
-### Producer and Consumer
-## partitions for Scalability and Performance > partition topics
-## Consumer groups for scalable message consumptions
-## Kafka Broker
-## Zookeeper
+## Zookeeper and KRaft
 
