@@ -19,11 +19,14 @@
 * Cosumer(microservices) subscribe to Topics. Each respective consumer gets notified by Kafka when a new event is added to that topic.
 <img src="https://github.com/user-attachments/assets/b2373ea9-71b3-44d2-b28f-77d677c2a95f" style="width: 50%;" />
 
-## Functionality of Kafka
+## Kafka usecases
 * Enables chain reaction: by ordering a product, it generate squence of action to deliver to user
-* Real-time analytics: like Uber whichi send location in real-time
+* Real-time Processing: Like sales dashboard, driver location in Uber
+### Kafka Stream API
+* It allows you to create real-time apps by continuously transforming and analysing incoming data stream.
+* You donot need to explicitly request new records, you just receive them.
 
-## Kafka performance
+## Kafka Partition
 * In big project, a Kafka topic is divided into one or more partitions.
 * A consumer group is a set of consumers that work together to read data from a topic. This makes it possible to process data in parallel.
 <img src="https://github.com/user-attachments/assets/252d4f59-a090-4d86-a0be-d4f3ef0837e0" style="width: 50%;" />
