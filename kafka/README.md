@@ -35,7 +35,11 @@
 <img src="https://github.com/user-attachments/assets/252d4f59-a090-4d86-a0be-d4f3ef0837e0" style="width: 50%;" />
 
 ## Kafka Broker
-* 
+* It stores data in topics and manages message distribution to cosumers
+* Fault tolerance: Topic's partitions are distributed across multiple brokers
+<img src="https://github.com/user-attachments/assets/ce3e27fc-94dc-4261-ae64-ca1bb247e09c" style="width: 50%;" />
+
+
 ## Data Persistence
 * After consuming data from topics, there keeps in broker.
 * Later, those kept data can be used for analytics.
