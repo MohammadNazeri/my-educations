@@ -5,3 +5,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Event 
+## Chain of Events
+## Real-time Processing Stream
+## Stream API
+### Producer and Consumer
+## partitions for Scalability and Performance > partition topics
+## Consumer groups for scalable message consumptions
+## Kafka Broker
+## Zookeeper
+
