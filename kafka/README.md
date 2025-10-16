@@ -3,6 +3,16 @@
 * Think of Kafka as a high-performance messaging system where data can be published, stored, and processed in real time — often used in large-scale systems like those at Netflix, LinkedIn, or Uber.
 <img src="https://github.com/user-attachments/assets/a012b81c-2096-47aa-8b61-5d7b0b7d6062" style="width: 30%;" />
 
+### Event
+* Event is form of data which read or write to Kafka. It is Json.
+```
+{
+  "event_type": "user_login",
+  "user_id": "u-123",
+  "ip": "203.0.113.42",
+  "ts": "2025-10-16T14:07:00Z"
+}
+```
 * Events are stored in Topics
 * Cosumer(microservices) subscribe to Topics. Each respective consumer gets notified when a new event is added to that topic.
 <img src="https://github.com/user-attachments/assets/b2373ea9-71b3-44d2-b28f-77d677c2a95f" style="width: 50%;" />
