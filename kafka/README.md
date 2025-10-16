@@ -5,6 +5,7 @@
 
 ### Event
 * Event is form of data which read or write to Kafka. It is Json.
+* Events are stored in Topics
 ```
 {
   "event_type": "user_login",
@@ -13,7 +14,8 @@
   "ts": "2025-10-16T14:07:00Z"
 }
 ```
-* Events are stored in Topics
+### Main Concept
+* Producer sends events to Topic
 * Cosumer(microservices) subscribe to Topics. Each respective consumer gets notified when a new event is added to that topic.
 <img src="https://github.com/user-attachments/assets/b2373ea9-71b3-44d2-b28f-77d677c2a95f" style="width: 50%;" />
 
