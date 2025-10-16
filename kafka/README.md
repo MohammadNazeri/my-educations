@@ -26,13 +26,16 @@
 * It allows you to create real-time apps by continuously transforming and analysing incoming data stream.
 * You donot need to explicitly request new records, you just receive them.
 
-## Kafka Partition
+## Kafka Scalability and Performance
 * In big project, a Kafka topic is divided into one or more partitions.
   * Events with the same Key are written to the same partition.
   * The benefits: Scalability, paralelism, ordering, Fault Tolerance, Logical grouping.
 * A consumer group is a set of consumers that work together to read data from a topic. This makes it possible to process data in parallel.
+  * Kafka distribute load automatically among consumers
 <img src="https://github.com/user-attachments/assets/252d4f59-a090-4d86-a0be-d4f3ef0837e0" style="width: 50%;" />
 
+## Kafka Broker
+* 
 ## Data Persistence
 * After consuming data from topics, there keeps in broker.
 * Later, those kept data can be used for analytics.
