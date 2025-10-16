@@ -16,7 +16,9 @@
 * A consumer group is a set of consumers that work together to read data from a topic. This makes it possible to process data in parallel.
 <img src="https://github.com/user-attachments/assets/252d4f59-a090-4d86-a0be-d4f3ef0837e0" style="width: 50%;" />
 
-
+## Data Persistence
+* After consuming data from topics, there keeps in broker.
+* Later, those kept data can be used for analytics.
 
 
 
