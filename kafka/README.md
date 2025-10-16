@@ -16,7 +16,7 @@
 ```
 ### Main Concept
 * Producer sends events to Topic
-* Cosumer(microservices) subscribe to Topics. Each respective consumer gets notified when a new event is added to that topic.
+* Cosumer(microservices) subscribe to Topics. Each respective consumer gets notified by Kafka when a new event is added to that topic.
 <img src="https://github.com/user-attachments/assets/b2373ea9-71b3-44d2-b28f-77d677c2a95f" style="width: 50%;" />
 
 ## Functionality of Kafka
