@@ -39,6 +39,9 @@
 * Fault tolerance: Topic's partitions are distributed across multiple brokers
 <img src="https://github.com/user-attachments/assets/ce3e27fc-94dc-4261-ae64-ca1bb247e09c" style="width: 50%;" />
 
+## Kafka VS others
+* Kafka keeps all message after consumption, unlike others.
+  *  
 
 ## Data Persistence
 * After consuming data from topics, there keeps in broker.
