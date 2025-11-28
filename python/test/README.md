@@ -67,9 +67,6 @@ def test_process_data(mocked_get_data):
     result = math_ops.process_data()
     assert result == 10
 ```
-#### patch & mock 
-* Mock() creates a mock object — it's like saying “Here’s a fake thing.”
-* patch() temporarily replaces a real thing with a fake thing (a mock) — usually to replace something imported from another module.
 
 ### mock
 Mock is a class that can simulate (mock) any object. You can specify return values, assert calls, and more.
@@ -88,6 +85,9 @@ result = my_mock.some_method()
 print(result)  # Output: 10
 print(my_mock.some_method.called)  # True
 ```
+#### patch & mock 
+* Mock() creates a mock object — it's like saying “Here’s a fake thing.”
+* patch() temporarily replaces a real thing with a fake thing (a mock) — usually to replace something imported from another module.
 ### MagicMock
 MagicMock is a subclass of Mock that has default implementations of Python magic methods (like __len__, __getitem__, etc.).
 Use MagicMock when you need to mock objects that rely on special methods like __len__, __getitem__, etc.
