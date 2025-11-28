@@ -86,8 +86,9 @@ print(result)  # Output: 10
 print(my_mock.some_method.called)  # True
 ```
 #### patch & mock 
-* Mock() creates a mock object — it's like saying “Here’s a fake thing.”
-* patch() temporarily replaces a real thing with a fake thing (a mock) — usually to replace something imported from another module.
+* Use Mock when you want to make your own fake object.
+* Use patch when you want to replace something that already exists in your code.
+
 ### MagicMock
 MagicMock is a subclass of Mock that has default implementations of Python magic methods (like __len__, __getitem__, etc.).
 Use MagicMock when you need to mock objects that rely on special methods like __len__, __getitem__, etc.
