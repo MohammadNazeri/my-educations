@@ -90,8 +90,8 @@ print(my_mock.some_method.called)  # True
 * Use patch when you want to replace something that already exists in your code.
 
 ### MagicMock
-MagicMock is a subclass of Mock that has default implementations of Python magic methods (like __len__, __getitem__, etc.).
-Use MagicMock when you need to mock objects that rely on special methods like __len__, __getitem__, etc.
+* MagicMock is a subclass of Mock 
+* Unlike Mock, MagicMock has default implementations of Python magic methods (like __len__, __iter__, __add__ etc.).
 ```
 from unittest.mock import MagicMock
 
@@ -105,5 +105,13 @@ print(len(my_magic))  # Works, returns another Mock object by default
 my_magic.__len__.return_value = 5
 print(len(my_magic))  # Output: 5
 ```
-
+#### Mock & MagicMock
+When to use which?
+* Use Mock for simple objects (methods, attributes).
+* Use MagicMock when:
+    * The object is iterated over
+    * You're mocking objects used with with statements
+    * Operators (+, in, comparisons) need to work
+    * You want fewer manual definitions
+      
 ## @pytest.mark.asyncio
