@@ -113,5 +113,32 @@ When to use which?
     * You're mocking objects used with with statements
     * Operators (+, in, comparisons) need to work
     * You want fewer manual definitions
-      
+## @pytest.fixture
+A fixture is a reusable function that provides a fixed baseline or setup that your tests can use.
+* Set up resources before a test runs
+* Tear down resources after the test (if needed)
+* Inject data or objects into tests automatically via dependency injection
+```
+import pytest
+
+@pytest.fixture
+def sample_data():
+    return {"x": 1, "y": 2}
+
+def test_sum(sample_data):
+    assert sample_data["x"] + sample_data["y"] == 3
+```
+Key features:
+* Automatic injection: pytest matches fixture names to test function parameters.
+* Scope control: You can run fixtures per test, per module, per session, etc.
+    * E.g. Fixture is created once per test class. All test methods in the class share the same fixture instance.
+  ```@pytest.fixture(scope="module")```
+* Teardown using yield:
+```
+@pytest.fixture
+def resource():
+    conn = open_resource()
+    yield conn
+    conn.close()
+```
 ## @pytest.mark.asyncio
