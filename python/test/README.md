@@ -141,4 +141,17 @@ def resource():
     yield conn
     conn.close()
 ```
+## @pytest.mark.parametrize
+Test many inputs with one test function:
+```
+import pytest
+
+@pytest.mark.parametrize("a,b,expected", [
+    (1, 1, 2),
+    (2, 3, 5),
+    (5, -1, 4),
+])
+def test_add(a, b, expected):
+    assert a + b == expected
+```
 ## @pytest.mark.asyncio
