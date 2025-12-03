@@ -155,3 +155,22 @@ def test_add(a, b, expected):
     assert a + b == expected
 ```
 ## @pytest.mark.asyncio
+
+## Example
+Assume there is class like below:
+```
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+    def divide(self, a, b):
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
+        return a / b
+```
+### 1. No mock
+```
+def test_add():
+    calc = Calculator()
+    assert calc.add(2, 3) == 5
+```
