@@ -174,3 +174,35 @@ def test_add():
     calc = Calculator()
     assert calc.add(2, 3) == 5
 ```
+### 2. Mock class instance
+```
+mock = Mock()
+mock.send.return_value = "ok"
+```
+Note:
+* It is not tied to any class and you can assign any attribute or method to it.
+* There is zero validation (no spec)
+  
+### 3. Mock class (constructor, all methods)
+```
+MockEmailClient = Mock(spec=EmailClient)
+mock_instance = MockEmailClient()
+```
+Note:
+* spec is a safety feature in unittest.mock that tells the mock to imitate the interface of another object or class.
+* MockEmailClient is a mock substitute for the EmailClient class
+* Mistyped or wrong attributes → raises AttributeError
+  
+### 4. Mock a method of a class (patch.object)
+```
+@patch.object(EmailClient, "send")
+```
+* The method named send defined on the class EmailClient
+* It affects all instances of EmailClient created during the patch
+* Any call to EmailClient.send() inside the patch scope gets replaced
+  
+### 5. Mock a function via patch()
+```
+@patch("module.function_name")
+```
+* A free-standing function, not part of a class
