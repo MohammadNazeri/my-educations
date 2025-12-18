@@ -70,3 +70,18 @@ Helm merges values in this order:
 <img width="1669" height="465" alt="image" src="https://github.com/user-attachments/assets/44f988e1-3d0c-41cc-bcf1-0c6e83851fb9" />
 
 ### Third Feature: Release Management
+* There is a big difference in helm version 2 and 3
+* Version 2:
+  * By runing `helm insatll`:
+    1. Helm client: Send request to Tiller
+    2. Helm server(Tiller): Execut the request and create component in kuberenets
+  * Release management: Tiller keep the track of client requests 
+
+
+<img width="1751" height="732" alt="image" src="https://github.com/user-attachments/assets/19020e43-d1ae-4b02-ace1-3d25b7ef0dcc" />
+
+* version 3:
+  * As Tiller had too much permission it makes security issues
+  * The Tiller is removed in new version
+  * As a result, release management is also removed.
+  * It increase security but make it more difficult to use
