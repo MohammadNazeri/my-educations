@@ -12,7 +12,7 @@ Template could be in repo (most common) or local.
 * Template is skeleton of a project which contain placeholders (like {{project_name}})
 
 ## Structure
-
+```
 cookiecutter-template/
 ├─ cookiecutter.json
 ├─ {{cookiecutter.project_name}}/
@@ -22,7 +22,7 @@ cookiecutter-template/
 │  │  └─ __init__.py
 │  └─ tests/
 │     └─ test_main.py
-
+```
 * cookiecutter.json: It defines variables and default values.
 ```
 {
