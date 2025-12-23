@@ -1,5 +1,7 @@
 # Cookiecutter
 * Cookiecutter is a tool that helps you quickly create project templates. So you don’t have to start from scratch every time.
+* Cookiecutter is just a templating engine. You can use it to generate non-programming projects: documentation project, etc.
+* Cookiecutter doesn’t care what’s inside the files. It just replaces placeholders and creates folder structures.
 ### How to work?
 Template could be in repo (most common) or local.
 1. pip install cookiecutter
