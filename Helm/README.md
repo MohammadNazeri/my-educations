@@ -43,6 +43,7 @@ helm install my-app bitnami/nginx --set replicaCount=3
 * values.yaml: values for the template files. It is default value which can be override later.
 * chart folder: chart dependencies
 * templates folder: the actual template files
+```
 my-chart/
 ├── Chart.yaml
 ├── values.yaml
@@ -56,6 +57,7 @@ my-chart/
 │   ├── _helpers.tpl
 │   └── NOTES.txt
 └── .helmignore
+```
 * By running `helm install` to install yamle file to kubernetes, the process will be as follows:
   1. template files will be filled with the value from values.yaml
   2. Produce valid kubernetes manifests
