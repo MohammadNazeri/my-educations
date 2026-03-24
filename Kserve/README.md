@@ -7,6 +7,7 @@ Kubernetes does not know anything about ML models:
   * It doesn’t know which framework your model uses (TensorFlow, PyTorch, sklearn)
   * It doesn’t automatically handle model versioning, canary updates, or A/B testing
   * It doesn’t scale based on inference requests or GPU usage, only generic CPU/memory metrics
+  * It doesn't know Latency, error rates, batch sizes, GPU utilization, prediction counts — these aren’t automatically tracked.
 
 With KServe:
 * You can deploy models with one simple resource definition (InferenceService)
