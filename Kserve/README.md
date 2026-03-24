@@ -2,6 +2,9 @@
 
 KServe (often what people mean by “kserver”) is an open-source platform used to deploy and manage machine learning models on Kubernetes. KServe uses Kubernetes as its foundation instead of replacing it.
 
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/13bc2519-52b8-40b8-b42f-cbf0adc820f6" />
+
+
 Kubernetes does not know anything about ML models:
   * It doesn’t know how to expose a /predict API automatically
   * It doesn’t know which framework your model uses (TensorFlow, PyTorch, sklearn)
@@ -23,4 +26,4 @@ With KServe:
   [Client Request] --> [KServe] --> [Model Server] --> [Your Model] --> [Response]
 
 
-<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/13bc2519-52b8-40b8-b42f-cbf0adc820f6" />
+<img width="1118" height="744" alt="image" src="https://github.com/user-attachments/assets/ab42e09a-1714-4802-9148-5bd353fcf6e0" />
