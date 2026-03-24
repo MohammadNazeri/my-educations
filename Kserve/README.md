@@ -21,3 +21,6 @@ With KServe:
  ### Model server
  The model server is a component that KServe uses to actually run your model
   [Client Request] --> [KServe] --> [Model Server] --> [Your Model] --> [Response]
+
+
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/13bc2519-52b8-40b8-b42f-cbf0adc820f6" />
