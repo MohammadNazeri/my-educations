@@ -9,12 +9,13 @@ Kubernetes does not know anything about ML models:
   * It doesn’t scale based on inference requests or GPU usage, only generic CPU/memory metrics
 
 With KServe:
-* You define a simple custom resource like an InferenceService
-* KServe automatically:
-  * Creates the needed Kubernetes objects
-  * Sets up autoscaling (even to zero)
-  * Routes traffic to your model (via REST or gRPC APIs)
-  * Manages revisions and updates
+* You can deploy models with one simple resource definition (InferenceService)
+  * Chooses the right model server (TensorFlow Serving, TorchServe, or custom)
+* Automatically exposes your model as a REST/gRPC API like /predict
+* Scales model servers up/down based on traffic (support GPU)
+* Supports multiple versions of the same model
+* Allows you to write custom logic if the built-in model servers aren’t enough (preprocess and postprocess)
+
 
  ### Model server
  The model server is a component that KServe uses to actually run your model
