@@ -1,0 +1,16 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: llm-qa
+spec:
+  predictor:
+    containers:
+      - name: kserve-container
+        image: your-registry/llm-qa:latest   # replace with your image
+        args:
+          - --model_id=./llm
+        resources:
+          limits:
+            memory: 4Gi
+          requests:
+            memory: 2Gi
