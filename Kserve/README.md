@@ -54,7 +54,7 @@ spec:
 ```
 
 ## Run Kserve in AKS
-1.Write code for LLM model
+1. Write code for LLM model
 2. build docker image for LLM model
 3. push it in ACR
 4. 
