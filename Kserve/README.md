@@ -56,9 +56,11 @@ spec:
 ## Run Kserve in AKS
 1. Docker image
 2. Write code for LLM model
-3. build docker image for LLM model
-4. push it in ACR
+3. Build docker image for LLM model
+4. Push it in ACR
 5. Create AKS through template
-6. install Kserve and Knative
-7. 
+6. Install Kserve and Knative
+7. Give AKS to access ACR
+8. Apply yaml file to AKS
+9. Test it
 
