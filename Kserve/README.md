@@ -54,8 +54,11 @@ spec:
 ```
 
 ## Run Kserve in AKS
-1. Write code for LLM model
-2. build docker image for LLM model
-3. push it in ACR
-4. 
+1. Docker image
+2. Write code for LLM model
+3. build docker image for LLM model
+4. push it in ACR
+5. Create AKS through template
+6. install Kserve and Knative
+7. 
 
