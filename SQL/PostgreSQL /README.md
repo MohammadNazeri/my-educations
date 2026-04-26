@@ -37,3 +37,18 @@ SELECT * FROM WHERE age>20;
   * one-one
   * one-many
   * many-many
+Example Two tables like user and posts
+Note: A foreign key is a column in one table that refers to a primary key in another table.
+```
+CREATE TABLE post(
+  id SERIAL PRIMAY KEY,
+  name VARCHAR(255),
+  content TEXT,
+  user_id INT, -- foreign key
+  CONSTRAIN fk_user
+    FOREIGN KEY(user_id)
+      REFERENCE profile(id)
+);
+
+
+```
