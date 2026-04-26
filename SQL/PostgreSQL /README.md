@@ -5,7 +5,7 @@
 
 ## Operations
 * conventions: all keywords are uppercase and anythings related to tables are lowercase.
-* CREATE TABLE [name] ([columns]);
+* CREATE TABLE [table name] ([columns]);
 ```
 CREATE TABLE profile(
   id SERIAL PRIMARY KEY,
@@ -16,15 +16,24 @@ CREATE TABLE profile(
 );
 ```
 Note: SERIAL is automatically adds 1
-* INSERT INTO [name] ([columns] VALUES ([values]);
+* INSERT INTO [table name] ([columns] VALUES ([values]);
 ```
 INSERT INTO profile (email, name, age, password) VALUES ('tory@gmail.com', 'Troy', 26, 'asfdasdf');
 ```
 Note: Use single quotes when writing text and Use double quotes for table names, column names, etc.
 
-* SELECT * FROM [name];
-* SELECT column1,column2,etc FROM [name];
-* SELECT * FROM [name] WHERE conditions;
+* SELECT * FROM [table name];
+* SELECT column1,column2,etc FROM [table name];
+* SELECT * FROM [table name] WHERE conditions;
 ```
 SELECT * FROM WHERE age>20;
 ```
+* UPDATE [table name] SET age=30 WHERE id=1;
+* DELETE FROM [table name] WHERE id=2;
+
+## Table Relationships
+* Tables can have relationships with other tables. This is how we relate entities to on another.
+* THere are 3 types of basic relationship:
+  * one-one
+  * one-many
+  * many-many
