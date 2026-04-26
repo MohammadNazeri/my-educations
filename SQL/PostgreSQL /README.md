@@ -49,4 +49,5 @@ CREATE TABLE post(
     FOREIGN KEY(user_id)
       REFERENCES profile(id)
 );
+INSERT INTO post(name, content, user_id) VALUES('why I love corgis', 'omg I love them, 1);
 ```
