@@ -21,3 +21,10 @@ Note: SERIAL is automatically adds 1
 INSERT INTO profile (email, name, age, password) VALUES ('tory@gmail.com', 'Troy', 26, 'asfdasdf');
 ```
 Note: Use single quotes when writing text and Use double quotes for table names, column names, etc.
+
+* SELECT * FROM [name];
+* SELECT column1,column2,etc FROM [name];
+* SELECT * FROM [name] WHERE conditions;
+```
+SELECT * FROM WHERE age>20;
+```
