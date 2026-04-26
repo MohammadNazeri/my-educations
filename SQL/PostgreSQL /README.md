@@ -59,3 +59,6 @@ INSERT INTO post(name, content, user_id) VALUES('why I love animal in general', 
 ```
 SELECT profile.*. post.id, post.name AS title, post.content, post.user_id FROM profile JOIN post ON post.user_id=profile.id
 ```
+
+
+Practice : https://onecompiler.com/
