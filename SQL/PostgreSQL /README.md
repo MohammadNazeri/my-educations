@@ -5,7 +5,7 @@
 
 ## Operations
 * conventions: all keywords are uppercase and anythings related to tables are lowercase.
-* CREATE TABLE [name]([columns]);
+* CREATE TABLE [name] ([columns]);
 ```
 CREATE TABLE profile(
   id SERIAL PRIMARY KEY,
