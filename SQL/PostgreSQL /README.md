@@ -52,3 +52,10 @@ CREATE TABLE post(
 INSERT INTO post(name, content, user_id) VALUES('why I love corgis', 'omg I love them', 1);
 INSERT INTO post(name, content, user_id) VALUES('why I love animal in general', 'omg I love themmmm', 1);
 ```
+## Join
+* a JOIN is used to combine rows from two or more tables based on a related column.
+* A JOIN lets you pull related data from different tables into one result.
+
+```
+SELECT profile.*. post.id, post.name AS title, post.content, post.user_id FROM profile JOIN post ON post.user_id=profile.id
+```
