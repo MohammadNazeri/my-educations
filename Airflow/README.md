@@ -23,6 +23,16 @@ Sequence of tasks stages:
 
 <img width="1264" height="461" alt="image" src="https://github.com/user-attachments/assets/b4af232f-f017-4d92-a97a-539dcb113174" />
 
+## Basic Architecture
+
+Steps to create workflow
+1. Data Engineer creates DAG through airflow interface (web)
+2. DAG is visible to scheduler and worker
+3. Executer to update and recieve info from DAG which is connected to DB
+
+<img width="904" height="469" alt="image" src="https://github.com/user-attachments/assets/8add88ad-2c39-4b90-8940-433103015281" />
+
+## BashOperator
 
 ### Installation
 
