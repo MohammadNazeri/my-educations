@@ -15,6 +15,14 @@
 
 <img width="1251" height="440" alt="image" src="https://github.com/user-attachments/assets/5d33bfd3-de82-41f0-8cbe-df83543f36c7" />
 
+the task lifecycle describes the sequence of states a task instance goes through from creation to completion (or failure).
+
+<img width="1255" height="53" alt="image" src="https://github.com/user-attachments/assets/f6bfa0b1-61a1-4fc1-bb1e-395654c5f5ce" />
+
+Sequence of tasks stages:
+
+<img width="1264" height="461" alt="image" src="https://github.com/user-attachments/assets/b4af232f-f017-4d92-a97a-539dcb113174" />
+
 
 ### Installation
 
