@@ -68,6 +68,27 @@ task = PythonOperator(
 def my_task():
     return "hello"
 ```
+### Caughtup and Backfill
+* In Apache Airflow, catchup and backfill both deal with running DAGs for past dates, but they are not the same thing.
+* Catchup is an automatic scheduler behavior. >If I missed past runs since start_date, should I run them now?
+```
+with DAG(
+    dag_id='example',
+    start_date=datetime(2021, 1, 1),
+    schedule='@daily',
+    catchup=True -- default value is True
+)
+```
+* Backfill is a manual operation. > Run the DAG for specific past dates on demand.
+* Connect to airflow_scheduler container and run below
+```
+airflow dags backfill \
+  --start-date 2024-01-01 \
+  --end-date 2024-01-07 \
+  my_dag
+```
+
+
 ### Installation
 
 [Docker compose](https://example.com](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
