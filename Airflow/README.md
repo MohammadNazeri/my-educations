@@ -32,7 +32,7 @@ Steps to create workflow
 
 <img width="904" height="469" alt="image" src="https://github.com/user-attachments/assets/8add88ad-2c39-4b90-8940-433103015281" />
 
-## Airflow DAG
+### Airflow DAG
 * The DAG defines its first interval starting at start_date, and the first run happens after that interval finishes.
   * start_date = beginning of the first data interval, Execution happens after that interval ends.
 * default_args is a dictionary of default settings that get automatically applied to all tasks in a DAG.
@@ -49,9 +49,25 @@ def task_b(**context):
     value = context['ti'].xcom_pull(task_ids='task_a')
     print(value)  # 42
 ```
+### Airflow Task Flow API
+* The TaskFlow API in Apache Airflow is a modern, Pythonic way to write DAGs where tasks are just Python functions.
+* TaskFlow API
+  * Feels like writing normal Python code
+  * Handles data passing automatically
+  * Less code, more intuitive
 
+```
+#old style
+task = PythonOperator(
+    task_id='my_task',
+    python_callable=my_function
+)
 
-
+# use decorator 
+@task
+def my_task():
+    return "hello"
+```
 ### Installation
 
 [Docker compose](https://example.com](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
