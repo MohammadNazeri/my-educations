@@ -32,7 +32,25 @@ Steps to create workflow
 
 <img width="904" height="469" alt="image" src="https://github.com/user-attachments/assets/8add88ad-2c39-4b90-8940-433103015281" />
 
-## BashOperator
+## Airflow DAG
+* The DAG defines its first interval starting at start_date, and the first run happens after that interval finishes.
+  * start_date = beginning of the first data interval, Execution happens after that interval ends.
+* default_args is a dictionary of default settings that get automatically applied to all tasks in a DAG.
+
+### XCom
+XCom (short for “cross-communication”) a lightweight way for tasks to pass small data between each other inside a DAG run.
+
+```
+#TaskA
+def task_a(**context):
+    return 42  # automatically pushed to XCom
+#TaskB
+def task_b(**context):
+    value = context['ti'].xcom_pull(task_ids='task_a')
+    print(value)  # 42
+```
+
+
 
 ### Installation
 
