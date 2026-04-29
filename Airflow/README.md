@@ -87,7 +87,9 @@ airflow dags backfill \
   --end-date 2024-01-07 \
   my_dag
 ```
-
+### Cron Expression
+* A cron expression is a compact string that defines when a scheduled job should run based on time.
+* structure: minute hour day month weekday
 
 ### Installation
 
