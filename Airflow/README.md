@@ -91,6 +91,64 @@ airflow dags backfill \
 * A cron expression is a compact string that defines when a scheduled job should run based on time.
 * structure: minute hour day month weekday
 
+```
+with DAG(
+    dag_id="my_dag",
+    start_date=datetime(2024, 1, 1),
+    schedule="0 0 * * *"   # cron expression
+):
+```
+### Connection to a platform
+* Admin > connection > define connection with login info
+
+### PostgresOperator
+```
+task1 = PostgresOperator(
+        task_id='create_postgres_table',
+        postgres_conn_id='postgres_localhost',
+        sql="""
+            create table if not exists dag_runs (
+                dt date,
+                dag_id character varying,
+                primary key (dt, dag_id)
+            )
+        """
+    )
+```
+### AWS S3 Sensor Operator 
+* (usually called S3KeySensor) is a special type of sensor that waits for a file to appear in an Amazon S3 bucket before continuing a workflow.
+```
+from airflow.providers.amazon.aws.sensors.s3 import S3KeySensor
+
+wait_for_file = S3KeySensor(
+    task_id="wait_for_s3_file",
+    bucket_name="my-data-bucket",
+    bucket_key="data/input/file.csv",
+    poke_interval=60,   # check every 60 seconds
+    timeout=60*60       # stop after 1 hour
+)
+```
+### PostgresHook
+* a PostgresHook is a helper class used to connect to and interact with a PostgreSQL database.
+
+```
+from airflow.providers.postgres.hooks.postgres import PostgresHook
+
+def run_query():
+    hook = PostgresHook(postgres_conn_id="my_postgres_db") --find connection id from admin>connections
+    conn = hook.get_conn()
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM users;")
+    results = cursor.fetchall()
+
+    print(results)
+```
+Note: 
+* Hook = a connector that lets Airflow talk to external systems (databases, APIs, cloud services).
+* Operator = a task in a DAG that does work (run SQL, execute Python, run a command).
+* Key idea: Operators often use Hooks internally to perform their work.
+
 ### Installation
 
 [Docker compose](https://example.com](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
